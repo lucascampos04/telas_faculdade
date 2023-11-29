@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    resize: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 66px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.ra {
+    width: 260px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.add_ra {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.alunos_ocorrencias {
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.aplicar {
+    margin-top: 20px;
+    width: 260px;
+    height: 60px;
+    background-color: rgb(13, 115, 31);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.barra {
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 60px;
+}
+
+.barra a{
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.barra-menu {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center; 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    height: 60px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

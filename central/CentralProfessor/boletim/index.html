@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Área do Professor</title>
+</head>
+<body>
+    <div class="frame-top">
+        <h1 id="titleP">Área do Professor</h1>
+    </div>
+    <div class="barra">
+        <div class="barra-menu">
+            <a href="/central/CentralProfessor/boletim/index.html">Boletim</a>
+            <a href="/central/CentralProfessor/ocorrencias/index.html">Cronograma</a>
+            <a href="/central/CentralProfessor/ocorrencias/index.html">Ocorrências</a>
+        </div>
+        <a href="/home/index.html">Sair</a>
+    </div>
+    <span class="bolCrono">
+        <h3>Boletim</h3>
+        <h3>Cronograma</h3>
+        <p>CASO NÃO ENCONTRE O ALUNO DESEJADO <br> FAÇA A BUSCA PELO RA DO MESMO</p>
+        <div class="btns">
+            <button class="add">ADICIONAR NOTA</button>
+            <button class="put">EDITAR NOTA</button>
+            <button class="delete">REMOVER NOTA</button>
+        </div>
+    </span>
+
+    <div class="frame-meio">
+        <select name="ALUNO" id="student">
+            <option value="" disabled selected>Selecione um aluno(a)</option>
+            <option value="1">Lucas Oliveira Campos</option>
+            <option value="2">Ana Silva Souza</option>
+            <option value="3">Pedro Santos Lima</option>
+            <option value="4">Mariana Ferreira Alves</option>
+            <option value="5">Rafaela Pereira Costa</option>
+            <option value="6">Carlos Rodrigues Gomes</option>
+            <option value="7">Isabela Santos Cruz</option>
+            <option value="8">Gustavo Fernandes Pereira</option>
+            <option value="9">Maria Eduarda Almeida</option>
+            <option value="10">João Lucas Carvalho</option>
+            <option value="11">Larissa Vieira Santos</option>
+            <option value="12">Daniel Oliveira Rocha</option>
+            <option value="13">Fernanda Souza Lima</option>
+            <option value="14">Mateus Silva Costa</option>
+            <option value="15">Carolina Santos Alves</option>
+            <option value="16">Gabriel Pereira Rodrigues</option>
+            <option value="17">Amanda Fernandes Gomes</option>
+            <option value="18">Lucas Oliveira Campos</option>
+            <option value="19">Juliana Santos Cruz</option>
+            <option value="20">Rafaela Pereira Costa</option>
+            <option value="21">Ricardo Fernandes Pereira</option>
+            <option value="22">Larissa Vieira Santos</option>
+            <option value="23">Pedro Santos Lima</option>
+            <option value="24">Mariana Ferreira Alves</option>
+            <option value="25">Isabela Santos Cruz</option>
+            <option value="26">Gustavo Fernandes Pereira</option>
+            <option value="27">Maria Eduarda Almeida</option>
+            <option value="28">João Lucas Carvalho</option>
+            <option value="29">Larissa Vieira Santos</option>
+            <option value="30">Daniel Oliveira Rocha</option>
+        </select>
+
+        <span>
+            <input type="text" placeholder="RA DO ALUNO">
+            <button type="submit" id="btn_buscar" style="cursor: pointer;">BUSCAR</button>
+        </span>
+
+        <br>
+
+        <select name="TURMAS" id="class">
+            <option value="" disabled selected>Selecione uma turma</option>
+            <option value="">1º A - Sala 18</option>
+            <option value="">1º B - Sala 10</option>
+            <option value="">2º A - Sala 20</option>
+            <option value="">2º B - Sala 11</option>
+            <option value="">3º A - Sala 13</option>
+            <option value="">3º B - Sala 15</option>
+        </select>
+
+        <select name="ANO" id="year" title="ANO" >
+            <option value="" disabled selected>Selecione um ano</option>
+            <option value="1">2023</option>
+            <option value="2">2022</option>
+            <option value="3">2021</option>
+            <option value="4">2020</option>
+        </select>
+
+        <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px;">
+            <option value="" disabled selected>Selecione um ano</option>
+            <option value="1">1° BIMESTRE</option>
+            <option value="2">2° BIMESTRE</option>
+            <option value="3">3° BIMESTRE</option>
+            <option value="4">4° BIMESTRE</option>
+        </select>
+
+        
+        <h1>NOTAS</h1>
+        <h5 id="alunoSelecionado">ALUNO SELECIONADO</h5>
+    
+        <table>
+            <tr>
+                <th rowspan="2">Matérias</th>
+                <th colspan="5">Bimestres</th>
+            </tr>
+            <tr>
+                <th>1º Bimestre</th>
+                <th>2º Bimestre</th>
+                <th>3º Bimestre</th>
+                <th>4º Bimestre</th>
+                <th>Fechamento</th>
+            </tr>
+            <tr>
+                <td id="Matemática">Matemática</td>
+                <td id="Matemática_1">Nota 1</td>
+                <td id="Matemática_2">Nota 2</td>
+                <td id="Matemática_3">Nota 3</td>
+                <td id="Matemática_4">Nota 4</td>
+                <td id="Matemática_final">Nota final</td>
+            </tr>
+            <tr>
+                <td id="Historia">Historia</td>
+                <td id="Historia_1">Nota 1</td>
+                <td id="Historia_2">Nota 2</td>
+                <td id="Historia_3">Nota 3</td>
+                <td id="Historia_4">Nota 4</td>
+                <td id="Historia_final">Nota final</td>
+            </tr>
+            <tr>
+                <td id="Filosofia">Filosofia</td>
+                <td id="Filosofia_1">Nota 1</td>
+                <td id="Filosofia_2">Nota 2</td>
+                <td id="Filosofia_3">Nota 3</td>
+                <td id="Filosofia_4">Nota 4</td>
+                <td id="Filosofia_final">Nota final</td>
+            </tr>
+            <tr>
+                <td id="Fisica">Fisica</td>
+                <td id="Fisica_1">Nota 1</td>
+                <td id="Fisica_2">Nota 2</td>
+                <td id="Fisica_3">Nota 3</td>
+                <td id="Fisica_4">Nota 4</td>
+                <td id="Fisica_final">Nota final</td>
+            </tr>
+            <tr>
+                <td id="Quimica">Quimica</td>
+                <td id="Quimica_1">Nota 1</td>
+                <td id="Quimica_2">Nota 2</td>
+                <td id="Quimica_3">Nota 3</td>
+                <td id="Quimica_4">Nota 4</td>
+                <td id="Quimica_final">Nota final</td>
+            </tr>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

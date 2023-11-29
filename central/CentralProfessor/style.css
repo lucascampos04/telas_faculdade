@@ -1,0 +1,127 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid black;
+    text-align: center;
+    background: linear-gradient(to left, rgb(61, 51, 61), white);
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 800;
+    color: white;
+    -webkit-text-stroke: 1px rgb(33, 33, 109);
+    margin-bottom: 20px;
+}
+
+.barra {
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to left, rgb(12, 11, 12), white);
+    color: white;
+    height: 60px;
+}
+
+.barra a{
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-menu {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center; 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    height: 60px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.cronograma table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.cronograma th, .cronograma td {
+    border: 1px solid #0e0a0a;
+    padding: 12px;
+    text-align: center;
+}
+
+.cronograma th {
+    font-weight: bold;
+    background-color: aqua;
+}
+
+.cronograma th:hover {
+    font-weight: bold;
+    background-color: rgb(152, 212, 212);
+    color: white;
+}
+
+
+.cronograma td {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.cronograma td:hover{
+    background-color: #a7a3a3;
+    color: black;
+}
+
+.cronograma {
+    overflow-x: auto; 
+}
+
+h2{
+    text-align: center;
+    font-size: 80px;
+    margin: 0%;
+    padding-top: 10px;
+}
+select {
+    position: relative;
+    left: 20%;
+    top: 10vh;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+#cronograma {
+    border: 1px solid #ddd;
+    padding: 10px;
+}

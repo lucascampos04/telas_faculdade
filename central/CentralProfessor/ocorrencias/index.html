@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ocorrências</title>
+</head>
+<body>
+    <div class="container">
+        <div class="barra">
+            <div class="barra-menu">
+                <a href="/central/CentralProfessor/boletim/index.html">Boletim</a>
+                <a href="/central/CentralProfessor/ocorrencias/index.html">Cronograma</a>
+                <a href="/central/CentralProfessor/ocorrencias/index.html">Ocorrências</a>
+            </div>
+            <a href="/home/index.html">Sair</a>
+        </div>
+        <h1>Ocorrências</h1>
+
+        <div class="button-container">
+            <input class="ra" placeholder="RA"/>
+            <button class="add_ra" id="addAluno">+</button>
+        </div>
+
+        <div class="desc_ocorrencia">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Digite a descrição da ocorrência"></textarea>
+        </div>
+
+        <div class="alunos_ocorrencias">
+            <table id="ocorrenciasTable">
+                <tr>
+                    <th>RA</th>
+                    <th>Aluno</th>
+                    <th>Descrição da Ocorrência</th>
+                    <th>Data</th>
+                </tr>
+            </table>
+        </div>
+
+        <button class="aplicar" id="btn_aplicar">Aplicar Ocorrências</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
