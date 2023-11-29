@@ -2,7 +2,7 @@ body{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    overflow: hidden;
+
 }
 
 .frame-top{
@@ -97,8 +97,10 @@ h3{
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #bbadad;
     font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
 }
 
 .frame-meio h5{
@@ -107,4 +109,18 @@ th {
 
     width: 10%;
     margin-left: 40%;
+}
+
+.alunosEnvolvdos{
+    display: none;
+    width: 20vw;
+    height: 20vh;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    bottom: 35vw;
+    left: 40vw;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
 }
