@@ -2,7 +2,7 @@ body{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    overflow: hidden;
+   
 }
 
 .frame-top{
@@ -23,6 +23,44 @@ body{
     margin-left: 60px;
     font-size: x-large;
     text-align: center;
+}
+
+.barra-menu {
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    position: relative;
+    left: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra {
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    position: relative;
+    bottom: 24px;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to left, white, rgb(50, 50, 179));
+}
+
+a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: rgb(62, 33, 143);
+    color: white;
 }
 .bolCrono p{
     color: red;

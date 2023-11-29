@@ -60,25 +60,28 @@ function atualizarNotaFinal(materia) {
     const notas = [];
 
     for (let i = 1; i <= 4; i++) {
-        const nota = parseFloat(document.getElementById(`${materia}_${i}`).textContent);
-        if (!isNaN(nota)) {
-            notas.push(nota);
+        const cell = document.getElementById(`${materia}_${i}`);
+        if (cell) {
+            const nota = parseFloat(cell.textContent);
+            if (!isNaN(nota)) {
+                notas.push(nota);
+            }
         }
     }
 
-    const media = calcularMedia(notas);
-
     const notaFinalCell = document.getElementById(`${materia}_final`);
-    notaFinalCell.textContent = media;
+    if (notaFinalCell) {
+        const media = calcularMedia(notas);
+        notaFinalCell.textContent = media;
 
-    if (media > 8) {
-        notaFinalCell.style.color = "green";
-    } else {
-        notaFinalCell.style.color = "";
-        notaFinalCell.style.backgroundColor = "";
+        if (media > 8) {
+            notaFinalCell.style.color = "green";
+        } else {
+            notaFinalCell.style.color = "";
+            notaFinalCell.style.backgroundColor = "";
+        }
     }
 }
-
 // Atualizar notas iniciais na tabela
 atualizarNotaFinal("Matemática");
 atualizarNotaFinal("Historia");
@@ -140,20 +143,63 @@ selectAluno.addEventListener("change", function () {
             atualizarNotaFinal(materia);
         }
         const alunoSelecionado = selectAluno.options[selectAluno.selectedIndex].text;
-        alunoSelecionadoText.textContent = alunoSelecionado
+        alunoSelecionadoText.textContent = alunoSelecionado;
     } else {
         const cells = document.querySelectorAll("td:not(:first-child)");
         cells.forEach((cell) => {
             cell.textContent = "";
         });
 
-        alunoSelecionadoText.text = "ALUNO SELECIONADO"
+        alunoSelecionadoText.textContent = "ALUNO SELECIONADO";
     }
 });
-
 
 const titleP = document.getElementById("titleP")
 
 titleP.addEventListener("click", () => {
     window.location.href = "/central/CentralProfessor/index.html"
 })
+
+// ... (o restante do seu código permanece inalterado) ...
+
+for (let alunoID = 1; alunoID <= 30; alunoID++) {
+    notasDoAluno[alunoID] = {
+        Matemática: [
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria()
+        ],
+        Historia: [
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria()
+        ],
+        Filosofia: [
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria()
+        ],
+        Fisica: [
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria()
+        ],
+        Quimica: [
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria(),
+            gerarNotaAleatoria()
+        ]
+    };
+
+    // Adicionar uma nota para AV1 em cada disciplina
+    notasDoAluno[alunoID].Matemática.unshift(gerarNotaAleatoria());
+    notasDoAluno[alunoID].Historia.unshift(gerarNotaAleatoria());
+    notasDoAluno[alunoID].Filosofia.unshift(gerarNotaAleatoria());
+    notasDoAluno[alunoID].Fisica.unshift(gerarNotaAleatoria());
+    notasDoAluno[alunoID].Quimica.unshift(gerarNotaAleatoria());
+}

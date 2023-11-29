@@ -13,7 +13,7 @@
     <div class="barra">
         <div class="barra-menu">
             <a href="/central/CentralProfessor/boletim/index.html">Boletim</a>
-            <a href="/central/CentralProfessor/ocorrencias/index.html">Cronograma</a>
+            <a href="/central/CentralProfessor/croograma/index.html">Cronograma</a>
             <a href="/central/CentralProfessor/ocorrencias/index.html">Ocorrências</a>
         </div>
         <a href="/home/index.html">Sair</a>
@@ -82,7 +82,7 @@
         </select>
 
         <select name="ANO" id="year" title="ANO" >
-            <option value="" disabled selected>Selecione um ano</option>
+            <option value="" disabled selected onchange=mudarBimestre()>Selecione um ano</option>
             <option value="1">2023</option>
             <option value="2">2022</option>
             <option value="3">2021</option>
@@ -90,7 +90,7 @@
         </select>
 
         <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px;">
-            <option value="" disabled selected>Selecione um ano</option>
+            <option value="" disabled selected>Selecione o bimestre</option>
             <option value="1">1° BIMESTRE</option>
             <option value="2">2° BIMESTRE</option>
             <option value="3">3° BIMESTRE</option>
@@ -104,57 +104,89 @@
         <table>
             <tr>
                 <th rowspan="2">Matérias</th>
-                <th colspan="5">Bimestres</th>
+                <th colspan="7" id="bimestreHeader">Bimestre</th>
             </tr>
             <tr>
-                <th>1º Bimestre</th>
-                <th>2º Bimestre</th>
-                <th>3º Bimestre</th>
-                <th>4º Bimestre</th>
-                <th>Fechamento</th>
+                <th>AV1</th>
+                <th>AV2</th>
+                <th>MEDIA</th>
+                <th>FALTAS</th>
+                <th>LIMITE DE FALTAS</th>
+                <th>SITUAÇÃO</th>
             </tr>
-            <tr>
-                <td id="Matemática">Matemática</td>
-                <td id="Matemática_1">Nota 1</td>
-                <td id="Matemática_2">Nota 2</td>
-                <td id="Matemática_3">Nota 3</td>
-                <td id="Matemática_4">Nota 4</td>
-                <td id="Matemática_final">Nota final</td>
+            <tr class="aprovado">
+                <td id="Matematica">Matemática</td>
+                <td id="Matematica_1">8</td>
+                <td id="Matematica_2">7</td>
+                <td id="Matematica_media">7.5</td>
+                <td id="Matematica_faltas">10</td>
+                <td id="Matematica_limite">20</td>
+                <td id="Matematica_situacao">APROVADO</td>
             </tr>
-            <tr>
-                <td id="Historia">Historia</td>
-                <td id="Historia_1">Nota 1</td>
-                <td id="Historia_2">Nota 2</td>
-                <td id="Historia_3">Nota 3</td>
-                <td id="Historia_4">Nota 4</td>
-                <td id="Historia_final">Nota final</td>
+            <tr class="aprovado">
+                <td id="Historia">História</td>
+                <td id="Historia_1">9</td>
+                <td id="Historia_2">8</td>
+                <td id="Historia_media">8.5</td>
+                <td id="Historia_faltas">10</td>
+                <td id="Historia_limite">20</td>
+                <td id="Historia_situacao">APROVADO</td>
             </tr>
-            <tr>
-                <td id="Filosofia">Filosofia</td>
-                <td id="Filosofia_1">Nota 1</td>
-                <td id="Filosofia_2">Nota 2</td>
-                <td id="Filosofia_3">Nota 3</td>
-                <td id="Filosofia_4">Nota 4</td>
-                <td id="Filosofia_final">Nota final</td>
+            <tr class="reprovado">
+                <td id="Biologia">Biologia</td>
+                <td id="Biologia_1">7</td>
+                <td id="Biologia_2">6</td>
+                <td id="Biologia_media">6.5</td>
+                <td id="Biologia_faltas">10</td>
+                <td id="Biologia_limite">20</td>
+                <td id="Biologia_situacao">REPROVADO</td>
             </tr>
-            <tr>
-                <td id="Fisica">Fisica</td>
-                <td id="Fisica_1">Nota 1</td>
-                <td id="Fisica_2">Nota 2</td>
-                <td id="Fisica_3">Nota 3</td>
-                <td id="Fisica_4">Nota 4</td>
-                <td id="Fisica_final">Nota final</td>
+            <tr class="aprovado">
+                <td id="Fisica">Física</td>
+                <td id="Fisica_1">8.5</td>
+                <td id="Fisica_2">9</td>
+                <td id="Fisica_media">8.75</td>
+                <td id="Fisica_faltas">10</td>
+                <td id="Fisica_limite">20</td>
+                <td id="Fisica_situacao">APROVADO</td>
             </tr>
-            <tr>
-                <td id="Quimica">Quimica</td>
-                <td id="Quimica_1">Nota 1</td>
-                <td id="Quimica_2">Nota 2</td>
-                <td id="Quimica_3">Nota 3</td>
-                <td id="Quimica_4">Nota 4</td>
-                <td id="Quimica_final">Nota final</td>
+            <tr class="aprovado">
+                <td id="Portugues">Português</td>
+                <td id="Portugues_1">8.5</td>
+                <td id="Portugues_2">9</td>
+                <td id="Portugues_media">8.75</td>
+                <td id="Portugues_faltas">10</td>
+                <td id="Portugues_limite">20</td>
+                <td id="Portugues_situacao">APROVADO</td>
+            </tr>
+            <tr class="aprovado">
+                <td id="Quimica">Química</td>
+                <td id="Quimica_1">7.5</td>
+                <td id="Quimica_2">7</td>
+                <td id="Quimica_media">7.25</td>
+                <td id="Quimica_faltas">10</td>
+                <td id="Quimica_limite">20</td>
+                <td id="Quimica_situacao">APROVADO</td>
+            </tr>
+            <tr class="aprovado">
+                <td id="Redacao">Redação</td>
+                <td id="Redacao_1">7.5</td>
+                <td id="Redacao_2">7</td>
+                <td id="Redacao_media">7.25</td>
+                <td id="Redacao_faltas">10</td>
+                <td id="Redacao_limite">20</td>
+                <td id="Redacao_situacao">APROVADO</td>
             </tr>
         </table>
     </div>
     <script src="./index.js"></script>
+    <script>
+        function mudarBimestre() {
+          var select = document.getElementById("bimestre");
+          var bimestreSelecionado = select.options[select.selectedIndex].text;
+      
+          document.getElementById("bimestreHeader").innerHTML = bimestreSelecionado;
+        }
+      </script>
 </body>
 </html>
