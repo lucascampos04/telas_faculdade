@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Colegio Jorgina</title>
+</head>
+<body>
+    <div class="frame-top">
+        <h1> <a href="./index.html">Colégio Jorgina</a></h1>
+    </div>
+
+    <div class="frame-meio">
+        <div class="primeira_parte" style="display: block;">
+            <h3>Recuperar Senha</h3> 
+                <h4>Formas de recuperar</h4>
+            <div class="radios">
+                <div>
+                    <input type="radio" id="sms" name="recuperar" value="sms">
+                    <label for="sms">SMS</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="whatsapp" name="recuperar" value="whatsapp">
+                    <label for="whatsapp">WhatsApp</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="email" name="recuperar" value="email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <br>
+            <div class="input_buttons">
+                <span>
+                    <input type="text" id="infoInput" placeholder="Preencher com informações de contato" class="infoInput">
+                    <button type="submit" class="btn_enviar" id="btn_enviar">
+                        Enviar Código
+                    </button>
+                </span>
+                <br><br>
+                <span>
+                    <input type="text" id="codigoInput" placeholder="Coloque o código aqui" class="codigoInput">
+                    <button type="submit" class="btn_enviar codigoBtn">
+                        Enviar
+                    </button>
+                </span>
+            </div>
+            </div>
+        </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

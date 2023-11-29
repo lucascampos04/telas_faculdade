@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova senha</title>
+    <style>
+        .formNovaSenha {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            position: relative;
+            bottom: 25vw;
+            left: 70vh;
+            display: block;
+            position: relative;
+            top: 5vw;
+            padding: 30px 50px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+        }
+
+        .formNovaSenha input {
+            height: 40px;
+            width: 300px;
+        }
+
+        .formNovaSenha label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .formNovaSenha .botao_confirma {
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="formNovaSenha">
+        <form>
+            <label>Nova Senha</label>
+            <br>
+            <input type="password" placeholder="Nova Senha" id="password">
+            <br> <br>
+            <label>Confirma Senha</label>
+            <br>
+            <input type="password" placeholder="Confirma Senha" id="confirm_password">
+            <br><br>
+            <button class="botao_confirma" type="button" onclick="senha_confirma()">Confirma</button>
+        </form>
+    </div>
+    <script>
+        function senha_confirma() {
+            const pass = document.getElementById('password').value;
+            const pass_confirm = document.getElementById('confirm_password').value;
+
+            if (pass === pass_confirm) {
+                alert("Senha trocada com sucesso");
+                window.location.href = "/home/index.html";
+            } else {
+                alert("As senhas não se coincidem");
+            }
+        }
+    </script>
+</body>
+</html>

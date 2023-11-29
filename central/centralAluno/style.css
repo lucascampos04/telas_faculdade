@@ -1,0 +1,12 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0%;
+    width: 100vw;
+    height: 20vh;
+    background: linear-gradient(to left, white, blue);
+}
