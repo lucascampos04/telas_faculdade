@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styele.css">
+    <link rel="icon" href="/logoI.ico" type="image/x-icon">
     <title>Central</title>
 </head>
 <body>
     <div class="container">
-        <h1>CRONOGRAMA</h1>
+        <h1 style="cursor: pointer;" id="home">CRONOGRAMA</h1>
     </div>
     <div class="barra">
         <div class="barra-menu">
             <a href="/central/CentralProfessor/boletim/index.html">Boletim</a>
             <a href="/central/CentralProfessor/croograma/index.html">Cronograma</a>
             <a href="/central/CentralProfessor/ocorrencias/index.html">Ocorrências</a>
+            <a href="/central/CentralProfessor/index.html">Central</a>
         </div>
         <a href="/home/index.html">Sair</a>
     </div>
@@ -99,7 +101,10 @@
         </table>
     </div>
     <script>
-        
+        const h = document.getElementById("home")
+        h.addEventListener("click", () => {
+            window.location.href = "/central/CentralProfessor/index.html"
+        })
     </script>
 </body>
 </html>

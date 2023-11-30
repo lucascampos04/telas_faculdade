@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/logoI.ico" type="image/x-icon">
     <title>Ocorrências</title>
 </head>
 <body>
@@ -13,10 +14,11 @@
                 <a href="/central/CentralProfessor/boletim/index.html">Boletim</a>
                 <a href="/central/CentralProfessor/croograma/index.html">Cronograma</a>
                 <a href="/central/CentralProfessor/ocorrencias/index.html">Ocorrências</a>
+                <a href="/central/CentralProfessor/index.html">Central</a>
             </div>
             <a href="/home/index.html">Sair</a>
         </div>
-        <h1>Ocorrências</h1>
+        <h1 style="cursor: pointer;" id="home">Ocorrências</h1>
 
         <div class="button-container">
             <input class="ra" placeholder="RA"/>
@@ -41,5 +43,11 @@
     </div>
 
     <script src="./index.js"></script>
+    <script>
+        const h = document.getElementById("home")
+        h.addEventListener("click", () => {
+            window.location.href = "/central/CentralProfessor/index.html"
+        })
+    </script>
 </body>
 </html>

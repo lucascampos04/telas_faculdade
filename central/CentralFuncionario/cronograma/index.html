@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/logoI.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styele.css">
     <title>Central</title>
 </head>
 <body>
     <div class="container">
-        <h1>CRONOGRAMA</h1>
-    </div>
+        <h1 id="home" style="cursor: pointer;">CRONOGRAMA</h1>
+    </div> 
     <div class="barra">
         <div class="barra-menu">
             <a href="/central/CentralFuncionario/boletim/index.html" target="_blank">Boletim</a>
             <a href="/central/CentralFuncionario/cronograma/index.html" target="_blank">Cronograma</a>
             <a href="/central/CentralFuncionario/ocorrencias/index.html" target="_blank">Ocorrências</a>
             <a href="/central/CentralFuncionario/cadastroDeUsuario/index.html" target="_blank"  >Cadastrar usuario</a>
+            <a href="/central/CentralFuncionario/index.html" target="_blank"  >Central</a>
         </div>
         <a href="/home/index.html">Sair</a>
     </div>
@@ -180,7 +182,10 @@
         </table>
     </div>
     <script>
-        
+        const h = document.getElementById("home")
+        h.addEventListener("click", () => {
+            window.location.href = "/central/CentralFuncionario/index.html"
+        })
     </script>
 </body>
 </html>

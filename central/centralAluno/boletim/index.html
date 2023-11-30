@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Boletim</title>
+    <link rel="icon" href="/logoI.ico" type="image/x-icon">
 </head>
 <body>
     <div class="frame-top">
-        <h1>BOLETIM</h1>
+        <h1 style="cursor: pointer;" id="home">BOLETIM</h1>
     </div>
     <div class="barra">
         <div class="barra-menu">
             <a href="/central/centralAluno/boletim/index.html">Boletim</a>
             <a href="/central/centralAluno/cronograma/index.html">Cronograma</a>
             <a href="/central/centralAluno/ocorrencias/index.html">Ocorrências</a>
+            <a href="/central/centralAluno/index.html">Central</a>
         </div>
         <a href="/home/index.html">Sair</a>
     </div>
@@ -127,5 +129,11 @@
     </div>
     
     <script src="./index.js"></script>
+    <script>
+        const h = document.getElementById("home")
+        h.addEventListener("click", () => {
+            window.location.href = "/central/centralAluno/index.html"
+        })
+    </script>
 </body>
 </html>

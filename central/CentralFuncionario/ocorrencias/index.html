@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/logoI.ico" type="image/x-icon">
      <title>Ocorrências</title>
 </head>
 <body>
@@ -14,10 +15,11 @@
                 <a href="/central/CentralFuncionario/cronograma/index.html" target="_blank">Cronograma</a>
                 <a href="/central/CentralFuncionario/ocorrencias/index.html" target="_blank">Ocorrências</a>
                 <a href="/central/CentralFuncionario/cadastroDeUsuario/index.html" target="_blank"  >Cadastrar usuario</a>
+                <a href="/central/CentralFuncionario/index.html" target="_blank"  >Central</a>
             </div>
             <a href="/home/index.html">Sair</a>
         </div>
-        <h1>Ocorrências</h1>
+        <h1 style="cursor: pointer;" id="home">Ocorrências</h1>
 
         <div class="button-container">
             <input class="ra" placeholder="RA"/>
@@ -44,7 +46,12 @@
         <button class="aplicar" id="btn_aplicar">Aplicar Ocorrências</button>
     </div>
 
-
     <script src="./script.js"></script>
+    <script>
+        const h = document.getElementById("home")
+        h.addEventListener("click", () => {
+            window.location.href = "/central/CentralFuncionario/index.html"
+        })
+    </script>
 </body>
 </html>

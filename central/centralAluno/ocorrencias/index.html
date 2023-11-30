@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Ocorrências</title>
+    <link rel="icon" href="/logoI.ico" type="image/x-icon">
 </head>
 <body>
     <div class="frame-top">
-        <h1>Ocorrências</h1>
+        <h1 id="home" style="cursor: pointer;">Ocorrências</h1>
     </div>
     <div class="barra">
         <div class="barra-menu">
-            <a href="/central/centralAluno/boletim/index.html" class="ah">Boletim</a>
-            <a href="/central/centralAluno/cronograma/index.html" class="ah">Cronograma</a>
-            <a href="/central/centralAluno/ocorrencias/index.html" class="ah">Ocorrências</a>
+            <a href="/central/centralAluno/boletim/index.html">Boletim</a>
+            <a href="/central/centralAluno/cronograma/index.html">Cronograma</a>
+            <a href="/central/centralAluno/ocorrencias/index.html">Ocorrências</a>
+            <a href="/central/centralAluno/index.html">Central</a>
         </div>
         <a href="/home/index.html">Sair</a>
     </div>
     <span class="bolCrono">
-        <h3>Ocorrências</h3>
+        <h3 style="cursor: pointer;" id="home">Ocorrências</h3>
     </span>
 
     <div class="frame-meio">
@@ -75,6 +77,11 @@
                 ocult.style.display = (ocult.style.display === 'none') ? 'block' : 'none';
             });
         });
+
+        const h = document.getElementById("home")
+        h.addEventListener("click", () => {
+            window.location.href = "/central/centralAluno/index.html"
+        })
     </script>
     
 </body>
