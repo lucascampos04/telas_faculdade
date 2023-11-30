@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro de Usuario</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>USUARIOS</h1>
+        <div class="barra">
+            <div class="barra-menu">
+                <a href="/central/CentralFuncionario/boletim/index.html" target="_blank">Boletim</a>
+                <a href="/central/CentralFuncionario/cronograma/index.html" target="_blank">Cronograma</a>
+                <a href="/central/CentralFuncionario/ocorrencias/index.html" target="_blank">Ocorrências</a>
+                <a href="/central/CentralFuncionario/cadastroDeUsuario/index.html" target="_blank">Cadastrar Usuario</a>
+            </div>
+            <a href="/home/index.html">Sair</a>
+        </div>
+        <div class="container">
+            <button class="btn btn-success" id="btn"><h3>
+                CADASTRAR USUARIO
+            </h3></button>
+            <button class="btn btn-primary" id="btnedit"><h3>
+                ATUALIZAR USUARIO
+            </h3></button>
+            <h2>Ultimos cadastros</h2>        
+        </div>
+
+        <div class="card-container">
+            <div class="card-1">
+                <h3>RA : 2223104810</h3>
+                <h5>Lucas Oliveira Campos</h5> 
+                <h4>Aluno</h4>
+                <h4>email@gmail.com</h4>
+                <h5>(11) 95073-5140</h5>
+            </div>
+            
+            <div class="card-1">
+                <h3>RA : 1113104810</h3>
+                <h5>Osvaldinho</h5> 
+                <h4>Professor</h4>
+                <h4>ema1l@gmail.com</h4>
+                <h5>(11) 91073-5140</h5>
+            </div>
+    
+            <div class="card-1">
+                <h3>RA : 222314320</h3>
+                <h5>Carlão Santos</h5> 
+                <h4>Professor</h4>
+                <h4>ema12l@gmail.com</h4>
+                <h5>(11) 91273-5140</h5>
+            </div>
+            
+            <div class="card-1">
+                <h3>RA : 122324320</h3>
+                <h5>Gabriela Xaves</h5> 
+                <h4>Aluna</h4>
+                <h4>ema12l@gmail.com</h4>
+                <h5>(11) 91233-5140</h5>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script>
+        const addRouter = document.getElementById("btn")
+        const addRouterEdt = document.getElementById("btnedit")
+
+        addRouter.addEventListener("click", () => {
+            window.location.href = "/central/CentralFuncionario/cadastroDeUsuario/add/addusuarios.html"
+        })
+
+        addRouterEdt.addEventListener("click", () => {
+            window.location.href = "/central/CentralFuncionario/cadastroDeUsuario/add/editarUsuario.html"
+        })
+    </script>
+</body>
+</html>

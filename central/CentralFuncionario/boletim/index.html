@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Área do Professor</title>
+</head>
+<body>
+    <div class="frame-top">
+        <h1 id="titleP">CENTRAL</h1>
+    </div>
+    <div class="barra">
+        <div class="barra-menu">
+            <a href="/central/CentralFuncionario/boletim/index.html" target="_blank">Boletim</a>
+            <a href="/central/CentralFuncionario/cronograma/index.html" target="_blank">Cronograma</a>
+            <a href="/central/CentralFuncionario/ocorrencias/index.html" target="_blank">Ocorrências</a>
+            <a href="/central/CentralFuncionario/cadastroDeUsuario/index.html" target="_blank"  >Cadastrar usuario</a>
+        </div>
+        <a href="/home/index.html">Sair</a>
+    </div>
+    <span class="bolCrono">
+        <h3>Boletim</h3>
+        <p>CASO NÃO ENCONTRE O ALUNO DESEJADO <br> FAÇA A BUSCA PELO RA DO MESMO</p>
+    </span>
+
+    <div class="frame-meio">
+        <select name="ALUNO" id="student">
+            <option value="" disabled selected>Selecione um aluno(a)</option>
+            <option value="1">Lucas Oliveira Campos</option>
+            <option value="2">Ana Silva Souza</option>
+            <option value="3">Pedro Santos Lima</option>
+            <option value="4">Mariana Ferreira Alves</option>
+            <option value="5">Rafaela Pereira Costa</option>
+            <option value="6">Carlos Rodrigues Gomes</option>
+            <option value="7">Isabela Santos Cruz</option>
+            <option value="8">Gustavo Fernandes Pereira</option>
+            <option value="9">Maria Eduarda Almeida</option>
+            <option value="10">João Lucas Carvalho</option>
+            <option value="11">Larissa Vieira Santos</option>
+            <option value="12">Daniel Oliveira Rocha</option>
+            <option value="13">Fernanda Souza Lima</option>
+            <option value="14">Mateus Silva Costa</option>
+            <option value="15">Carolina Santos Alves</option>
+            <option value="16">Gabriel Pereira Rodrigues</option>
+            <option value="17">Amanda Fernandes Gomes</option>
+            <option value="18">Lucas Oliveira Campos</option>
+            <option value="19">Juliana Santos Cruz</option>
+            <option value="20">Rafaela Pereira Costa</option>
+            <option value="21">Ricardo Fernandes Pereira</option>
+            <option value="22">Larissa Vieira Santos</option>
+            <option value="23">Pedro Santos Lima</option>
+            <option value="24">Mariana Ferreira Alves</option>
+            <option value="25">Isabela Santos Cruz</option>
+            <option value="26">Gustavo Fernandes Pereira</option>
+            <option value="27">Maria Eduarda Almeida</option>
+            <option value="28">João Lucas Carvalho</option>
+            <option value="29">Larissa Vieira Santos</option>
+            <option value="30">Daniel Oliveira Rocha</option>
+        </select>
+
+        <span>
+            <input type="text" placeholder="RA DO ALUNO">
+            <button type="submit" id="btn_buscar" style="cursor: pointer;">BUSCAR</button>
+        </span>
+
+        <br>
+
+        <select name="TURMAS" id="class">
+            <option value="" disabled selected>Selecione uma turma</option>
+            <option value="">1º A - Sala 18</option>
+            <option value="">1º B - Sala 10</option>
+            <option value="">2º A - Sala 20</option>
+            <option value="">2º B - Sala 11</option>
+            <option value="">3º A - Sala 13</option>
+            <option value="">3º B - Sala 15</option>
+        </select>
+
+        <select name="ANO" id="year" title="ANO" >
+            <option value="" disabled selected onchange=mudarBimestre()>Selecione um ano</option>
+            <option value="1">2023</option>
+            <option value="2">2022</option>
+            <option value="3">2021</option>
+            <option value="4">2020</option>
+        </select>
+
+        <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px;">
+            <option value="" disabled selected>Selecione o bimestre</option>
+            <option value="1">1° BIMESTRE</option>
+            <option value="2">2° BIMESTRE</option>
+            <option value="3">3° BIMESTRE</option>
+            <option value="4">4° BIMESTRE</option>
+        </select>
+
+        
+        <h1>NOTAS</h1>
+        <h5 id="alunoSelecionado">ALUNO SELECIONADO</h5>
+    
+        <table>
+            <tr>
+                <th rowspan="2">Matérias</th>
+                <th colspan="7" id="bimestreHeader">Bimestre</th>
+            </tr>
+            <tr>
+                <th>AV1</th>
+                <th>AV2</th>
+                <th>MEDIA</th>
+                <th>FALTAS</th>
+                <th>LIMITE DE FALTAS</th>
+                <th>SITUAÇÃO</th>
+            </tr>
+            <tr class="aprovado">
+                <td id="Matematica">Matemática</td>
+                <td id="Matematica_1">8</td>
+                <td id="Matematica_2">7</td>
+                <td id="Matematica_media">7.5</td>
+                <td id="Matematica_faltas">10</td>
+                <td id="Matematica_limite">20</td>
+                <td id="Matematica_situacao">APROVADO</td>
+            </tr>
+            <tr class="aprovado">
+                <td id="Historia">História</td>
+                <td id="Historia_1">9</td>
+                <td id="Historia_2">8</td>
+                <td id="Historia_media">8.5</td>
+                <td id="Historia_faltas">10</td>
+                <td id="Historia_limite">20</td>
+                <td id="Historia_situacao">APROVADO</td>
+            </tr>
+            <tr class="reprovado">
+                <td id="Biologia">Biologia</td>
+                <td id="Biologia_1">7</td>
+                <td id="Biologia_2">6</td>
+                <td id="Biologia_media">6.5</td>
+                <td id="Biologia_faltas">10</td>
+                <td id="Biologia_limite">20</td>
+                <td id="Biologia_situacao">REPROVADO</td>
+            </tr>
+            <tr class="aprovado">
+                <td id="Fisica">Física</td>
+                <td id="Fisica_1">8.5</td>
+                <td id="Fisica_2">9</td>
+                <td id="Fisica_media">8.75</td>
+                <td id="Fisica_faltas">10</td>
+                <td id="Fisica_limite">20</td>
+                <td id="Fisica_situacao">APROVADO</td>
+            </tr>
+            <tr class="aprovado">
+                <td id="Portugues">Português</td>
+                <td id="Portugues_1">8.5</td>
+                <td id="Portugues_2">9</td>
+                <td id="Portugues_media">8.75</td>
+                <td id="Portugues_faltas">10</td>
+                <td id="Portugues_limite">20</td>
+                <td id="Portugues_situacao">APROVADO</td>
+            </tr>
+            <tr class="aprovado">
+                <td id="Quimica">Química</td>
+                <td id="Quimica_1">7.5</td>
+                <td id="Quimica_2">7</td>
+                <td id="Quimica_media">7.25</td>
+                <td id="Quimica_faltas">10</td>
+                <td id="Quimica_limite">20</td>
+                <td id="Quimica_situacao">APROVADO</td>
+            </tr>
+            <tr class="aprovado">
+                <td id="Redacao">Redação</td>
+                <td id="Redacao_1">7.5</td>
+                <td id="Redacao_2">7</td>
+                <td id="Redacao_media">7.25</td>
+                <td id="Redacao_faltas">10</td>
+                <td id="Redacao_limite">20</td>
+                <td id="Redacao_situacao">APROVADO</td>
+            </tr> <a href=></a>
+        </table>
+    </div>
+</body>
+</html>

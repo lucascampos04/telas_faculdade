@@ -41,12 +41,10 @@ textarea {
 }
 
 .add_ra {
-    width: 200px;
+    width: 50px;
     height: 50px;
     font-size: 24px;
     font-weight: bold;
-    background-color: green;
-    color: white;
 }
 
 .alunos_ocorrencias {
@@ -97,7 +95,7 @@ th {
 
 .barra a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 60px;
     width: 120px;
     display: flex;
@@ -130,4 +128,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-remover{
+    background-color: red;
 }
