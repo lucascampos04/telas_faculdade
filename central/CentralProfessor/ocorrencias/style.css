@@ -47,6 +47,14 @@ textarea {
     font-weight: bold;
     background-color: green;
     color: white;
+    cursor: pointer;
+}
+#quit{
+    color: black;
+}
+
+.add_ra:hover{
+    background-color: rgb(42, 189, 42);
 }
 
 .alunos_ocorrencias {
@@ -56,21 +64,30 @@ textarea {
 }
 
 table {
-    width: 100%;
+    position: relative;
+    left: 2vw;
+    padding: 10px 14px;
+    width: 90%;
+    height: 150px;
     border-collapse: collapse;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    margin-top: 20px;
 }
 
 th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: center;
+    height: 30px;
+}
+
+td{
+    height: 100px;
 }
 
 th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    background-color: #3498db;
+    color: white;
+    
 }
 
 .aplicar {

@@ -5,28 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="/logoI.ico" type="image/x-icon">
-    <title>CONTATOS</title>
+    <title>Contatos</title>
 </head>
+
 <body>
     <div class="container">
 
         <div class="container-left">
             <span>
-                <h1>Colegio Jorgina</h1>
+                <h1 id="r" style="cursor: pointer;">Colegio Jorgina</h1>
                 <h5>Formas de Contato</h5>
             </span>
-            <div class="frame-end">
-                <ul>
-                    <h2>Email: colegioJorgina@email.com</h2>
-                    <h2>Whatsapp: (11) 96572-8741</h2>
-                    <h2>Telefone: (11) 4111-5634</h2>
-                </ul>
+            <div class="frameM">
+                <div class="frame-end">
+                    <ul>
+                        <h2>Meios de contatos</h2>
+                        <h3>Email: colegioJorgina@email.com</h3>
+                        <h3>Whatsapp: (11) 96572-8741</h3>
+                        <h3>Telefone: (11) 4111-5634</h3>
+                    </ul>  
+                </div>
+                <div class="entreC">
+                    <label for="">Mensagem</label>
+                    <br>
+                    <textarea name="Deixe sua mensagem aqui" id="" cols="30" rows="10" placeholder="Deixe sua mensagem aqui" ></textarea>
+                    <br>
+                    <input type="radio" id="email" name="recuperar" value="email">
+                    <label for="email" style="font-size: 20px;">Email</label>
+                    
+                    <input type="radio" id="email" name="recuperar" value="email">
+                    <label for="email" style="font-size: 20px;">Telefone</label>
+
+                    <input type="radio" id="email" name="recuperar" value="email">
+                    <label for="email" style="font-size: 20px;">WhatsApp</label>
+
+                    <br>
+
+                    <input type="text" placeholder="Sua forma de contato selecionada" class="userContato">   <button>Enviar</button>
+                </div>
             </div>
+            
+           
         </div>
         <div class="container-right">
             <img src="/logo.jpg" alt="foto" title="Foto Jorgina">
         </div>
     </div>
+
+    <script>
+        const re = document.getElementById("r")
+        re.addEventListener("click", () => {
+            window.location.href = "/home/index.html"
+        })
+    </script>
 
 </body>
 </html>
