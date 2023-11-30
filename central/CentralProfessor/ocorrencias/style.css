@@ -45,7 +45,7 @@ textarea {
     height: 50px;
     font-size: 24px;
     font-weight: bold;
-    background-color: green;
+    background-color: #3780f5;
     color: white;
     cursor: pointer;
 }
@@ -54,7 +54,7 @@ textarea {
 }
 
 .add_ra:hover{
-    background-color: rgb(42, 189, 42);
+    background-color: #3a86ff;
 }
 
 .alunos_ocorrencias {
@@ -147,4 +147,17 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.alunosEnvolvdos{
+    display: none;
+    width: 20vw;
+    height: 20vh;
+    border: 3px solid rgb(0, 0, 0);
+    position: relative;
+    bottom: 35vw;
+    left: 40vw;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }

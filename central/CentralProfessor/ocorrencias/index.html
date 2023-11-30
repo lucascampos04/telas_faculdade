@@ -38,34 +38,46 @@
                     <td id="Matemática_2">29/11/2023</td>
                     <td id="Matemática_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sapiente dolores! Sit consequuntur, ad, quaerat adipisci voluptatibus dolorum labore ipsa architecto excepturi suscipit aliquid repudiandae? Esse nostrum laudantium maxime maiores!</td>
                     <td>
-                        <a href="#">Alunos envolvidos</a>
+                        <a href="#" id="exib">Alunos envolvidos</a>
                     </td>
                 </tr>
                 <tr>
                     <td id="Historia_2">11/06/2022</td>
                     <td id="Historia_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, fuga? Repellendus harum nobis dolorem perferendis facere modi eos distinctio explicabo. Et veniam, hic cumque eaque qui maxime molestias ad deserunt?</td>
                     <td>
-                        <a href="#">Alunos envolvidos</a>
+                        <a href="#"  id="exib">Alunos envolvidos</a>
                     </td>
                 </tr>
                 <tr>
                     <td id="Filosofia_2">11/06/2022</td>
                     <td id="Filosofia_3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, unde excepturi ipsum quam reprehenderit minus consequuntur vitae atque laboriosam praesentium, nemo quos commodi illum quibusdam repellat numquam esse tenetur aspernatur?</td>
                     <td>
-                        <a href="#">Alunos envolvidos</a>
+                        <a href="#"  id="exib">Alunos envolvidos</a>
                     </td>
                 </tr>
             </table>
         </div>
 
     </div>
-
+    <div class="alunosEnvolvdos" id="names">
+        <h4>Alunos Envolvidos</h4>
+        Nome : Lucas Oliveira - 2223104810<br>
+        Nome : Gabriela - 2223104810
+    </div>
     <script src="./index.js"></script>
     <script>
         const h = document.getElementById("home")
         h.addEventListener("click", () => {
             window.location.href = "/central/CentralProfessor/index.html"
         })
+
+        var ocult = document.getElementById("names");
+        var ex = document.getElementById("exib")
+
+        ex.addEventListener("click", () => {
+            ocult.style.display = (ocult.style.display === "none") ? "block" : "none"
+        })
+        
     </script>
 </body>
 </html>

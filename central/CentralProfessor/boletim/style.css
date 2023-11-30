@@ -208,3 +208,14 @@ tr.reprovado {
     background-color: #e74c3c;
     color: white;
 }
+
+.busca{
+    position: relative;
+    left: 43vw;
+    bottom: 20px;
+
+}
+
+.busca input{
+    width: 200px;
+}

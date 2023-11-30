@@ -32,6 +32,16 @@ select {
     position: relative;
     left: 83vw;
     top: 6vh;
+    width: 200px;
+    font-size: 20px;
+}
+
+select, p{
+    font-weight: 600;
+}
+
+p{
+    font-size: 20px;
 }
 
 .cronograma table {
@@ -66,4 +76,12 @@ a {
 
 a:hover {
     color: #3498db;
+}
+
+p{
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+    left: 83vw;
+    top: 8vh;
 }
