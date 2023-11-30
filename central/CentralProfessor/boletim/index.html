@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="/logoI.ico" type="image/x-icon">
+
     <title>Boletim</title>
 </head>
 <body>
@@ -16,23 +18,47 @@
             <a href="/central/CentralProfessor/boletim/index.html">Boletim</a>
             <a href="/central/CentralProfessor/croograma/index.html">Cronograma</a>
             <a href="/central/CentralProfessor/ocorrencias/index.html">Ocorrências</a>
-            <a href="/central/CentralProfessor/index.html">Central</a>
         </div>
         <a href="/home/index.html">Sair</a>
     </div>
-    <span class="bolCrono">
-        <h3>Boletim</h3>
+    <span class="bolCrono">    
         <p>CASO NÃO ENCONTRE O ALUNO DESEJADO <br> FAÇA A BUSCA PELO RA DO MESMO</p>
         <div class="btns">
-            <button class="add" id="add">ADICIONAR NOTA</button>
-            <button class="put" id="put">EDITAR NOTA</button>
+            <button class="add" id="add">ADICIONAR/EDITAR NOTA</button>
         </div>
     </span>
 
     <div class="frame-meio">
+        
+
+        <span class="busca">
+            <input type="text" placeholder="RA DO ALUNO" id="raa" style="height: 44px;">
+            <button type="submit" id="btn_buscar" style="cursor: pointer;">BUSCAR</button>
+        </span>
+
+        <br>
+
+        <select name="ANO" id="year" title="ANO" >
+            <option value="" disabled selected onchange=mudarBimestre()>Selecione um ano</option>
+            <option value="1">2023</option>
+            <option value="2">2022</option>
+            <option value="3">2021</option>
+            <option value="4">2020</option>
+        </select>
+
+        <select name="TURMAS" id="class">
+            <option value="" disabled selected>Selecione uma turma</option>
+            <option value="">1º A - Sala 18</option>
+            <option value="">1º B - Sala 10</option>
+            <option value="">2º A - Sala 20</option>
+            <option value="">2º B - Sala 11</option>
+            <option value="">3º A - Sala 13</option>
+            <option value="">3º B - Sala 15</option>
+        </select>
+
         <select name="ALUNO" id="student">
             <option value="" disabled selected>Selecione um aluno(a)</option>
-            <option value="1">Lucas Oliveira Campos</option>
+            <option value="1">Lucas Oliveira Campos </option>
             <option value="2">Ana Silva Souza</option>
             <option value="3">Pedro Santos Lima</option>
             <option value="4">Mariana Ferreira Alves</option>
@@ -64,31 +90,6 @@
             <option value="30">Daniel Oliveira Rocha</option>
         </select>
 
-        <span>
-            <input type="text" placeholder="RA DO ALUNO">
-            <button type="submit" id="btn_buscar" style="cursor: pointer;">BUSCAR</button>
-        </span>
-
-        <br>
-
-        <select name="TURMAS" id="class">
-            <option value="" disabled selected>Selecione uma turma</option>
-            <option value="">1º A - Sala 18</option>
-            <option value="">1º B - Sala 10</option>
-            <option value="">2º A - Sala 20</option>
-            <option value="">2º B - Sala 11</option>
-            <option value="">3º A - Sala 13</option>
-            <option value="">3º B - Sala 15</option>
-        </select>
-
-        <select name="ANO" id="year" title="ANO" >
-            <option value="" disabled selected onchange=mudarBimestre()>Selecione um ano</option>
-            <option value="1">2023</option>
-            <option value="2">2022</option>
-            <option value="3">2021</option>
-            <option value="4">2020</option>
-        </select>
-
         <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px;">
             <option value="" disabled selected>Selecione o bimestre</option>
             <option value="1">1° BIMESTRE</option>
@@ -98,13 +99,14 @@
         </select>
 
         
-        <h1>NOTAS</h1>
+        
+        <h1 style="text-align: center; margin-left: 90vh;">NOTAS</h1>
         <h5 id="alunoSelecionado">ALUNO SELECIONADO</h5>
     
         <table>
             <tr>
-                <th rowspan="2">Matérias</th>
-                <th colspan="7" id="bimestreHeader">Bimestre</th>
+                <th rowspan="2" class="cc">Matérias</th>
+                <th colspan="7" class="cc" id="bimestreHeader">Bimestre</th>
             </tr>
             <tr>
                 <th>AV1</th>
@@ -180,6 +182,7 @@
         </table>
     </div>
     <script src="./index.js"></script>
+    
     <script>
          const add = document.getElementById("add")
          const put = document.getElementById("put")

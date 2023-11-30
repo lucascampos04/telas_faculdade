@@ -27,13 +27,13 @@ form.addEventListener("submit", (e) => {
     if (username === "seu_usuario" && password === "senha") {
         alert("Login bem-sucedido");
     } else if(recSenhaLogin === "aluno" && recSenhaSenha === "aluno"){
-        window.location.href = "/central/centralAluno/index.html"
+        window.location.href = "/central/centralAluno/boletim/index.html"
     }
     else if(ocorrLogin == "funcionario" && ocorrSenha == "funcionario"){
         window.location.href = "/central/CentralFuncionario/index.html"
     }
     else if(feedSenhaLogin === "professor" && feedSenhaSenha === "professor"){
-        window.location.href = "/central/CentralProfessor/index.html"
+        window.location.href = "/central/CentralProfessor/croograma/index.html"
     } 
     else {
         alert("Credenciais inválidas");

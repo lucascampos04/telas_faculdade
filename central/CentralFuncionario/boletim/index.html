@@ -27,9 +27,34 @@
     </span>
 
     <div class="frame-meio">
+        <span>
+            <input type="text" placeholder="RA DO ALUNO">
+            <button type="submit" id="btn_buscar" style="cursor: pointer;">BUSCAR</button>
+        </span>
+
+        <br>
+
+        <select name="ANO" id="year" title="ANO" >
+            <option value="" disabled selected onchange=mudarBimestre()>Selecione um ano</option>
+            <option value="1">2023</option>
+            <option value="2">2022</option>
+            <option value="3">2021</option>
+            <option value="4">2020</option>
+        </select>
+
+        <select name="TURMAS" id="class">
+            <option value="" disabled selected>Selecione uma turma</option>
+            <option value="">1º A - Sala 18</option>
+            <option value="">1º B - Sala 10</option>
+            <option value="">2º A - Sala 20</option>
+            <option value="">2º B - Sala 11</option>
+            <option value="">3º A - Sala 13</option>
+            <option value="">3º B - Sala 15</option>
+        </select>
+
         <select name="ALUNO" id="student">
             <option value="" disabled selected>Selecione um aluno(a)</option>
-            <option value="1">Lucas Oliveira Campos</option>
+            <option value="1">Lucas Oliveira Campos </option>
             <option value="2">Ana Silva Souza</option>
             <option value="3">Pedro Santos Lima</option>
             <option value="4">Mariana Ferreira Alves</option>
@@ -59,31 +84,6 @@
             <option value="28">João Lucas Carvalho</option>
             <option value="29">Larissa Vieira Santos</option>
             <option value="30">Daniel Oliveira Rocha</option>
-        </select>
-
-        <span>
-            <input type="text" placeholder="RA DO ALUNO">
-            <button type="submit" id="btn_buscar" style="cursor: pointer;">BUSCAR</button>
-        </span>
-
-        <br>
-
-        <select name="TURMAS" id="class">
-            <option value="" disabled selected>Selecione uma turma</option>
-            <option value="">1º A - Sala 18</option>
-            <option value="">1º B - Sala 10</option>
-            <option value="">2º A - Sala 20</option>
-            <option value="">2º B - Sala 11</option>
-            <option value="">3º A - Sala 13</option>
-            <option value="">3º B - Sala 15</option>
-        </select>
-
-        <select name="ANO" id="year" title="ANO" >
-            <option value="" disabled selected onchange=mudarBimestre()>Selecione um ano</option>
-            <option value="1">2023</option>
-            <option value="2">2022</option>
-            <option value="3">2021</option>
-            <option value="4">2020</option>
         </select>
 
         <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px;">

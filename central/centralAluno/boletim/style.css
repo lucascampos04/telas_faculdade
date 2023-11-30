@@ -2,6 +2,7 @@ body{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    overflow: hidden;
    
 }
 
@@ -145,4 +146,8 @@ th {
 
     width: 10%;
     margin-left: 40%;
+}
+
+#bi{
+    width: 250px;
 }

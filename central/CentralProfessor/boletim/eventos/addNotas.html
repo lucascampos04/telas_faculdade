@@ -30,50 +30,19 @@
             position: relative;
             left: 30%;
         }
+        p{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="frame-meio p-4 border rounded">
+            <p id="x">X</p>
             <h1 class="mb-4">Adicionar nota</h1>
+            
             <form>
-                <div class="mb-3">
-                    <label for="student" class="form-label">RA DO ALUNO</label>
-                    <input type="text" class="form-control" id="student" placeholder="RA do aluno">
-                    <select class="form-select mt-3" id="student">
-                        <option value="" disabled selected>Selecione um aluno(a)</option>
-                        <option value="1">Lucas Oliveira Campos</option>
-                        <option value="2">Ana Silva Souza</option>
-                        <option value="3">Pedro Santos Lima</option>
-                        <option value="4">Mariana Ferreira Alves</option>
-                        <option value="5">Rafaela Pereira Costa</option>
-                        <option value="6">Carlos Rodrigues Gomes</option>
-                        <option value="7">Isabela Santos Cruz</option>
-                        <option value="8">Gustavo Fernandes Pereira</option>
-                        <option value="9">Maria Eduarda Almeida</option>
-                        <option value="10">João Lucas Carvalho</option>
-                        <option value="11">Larissa Vieira Santos</option>
-                        <option value="12">Daniel Oliveira Rocha</option>
-                        <option value="13">Fernanda Souza Lima</option>
-                        <option value="14">Mateus Silva Costa</option>
-                        <option value="15">Carolina Santos Alves</option>
-                        <option value="16">Gabriel Pereira Rodrigues</option>
-                        <option value="17">Amanda Fernandes Gomes</option>
-                        <option value="18">Lucas Oliveira Campos</option>
-                        <option value="19">Juliana Santos Cruz</option>
-                        <option value="20">Rafaela Pereira Costa</option>
-                        <option value="21">Ricardo Fernandes Pereira</option>
-                        <option value="22">Larissa Vieira Santos</option>
-                        <option value="23">Pedro Santos Lima</option>
-                        <option value="24">Mariana Ferreira Alves</option>
-                        <option value="25">Isabela Santos Cruz</option>
-                        <option value="26">Gustavo Fernandes Pereira</option>
-                        <option value="27">Maria Eduarda Almeida</option>
-                        <option value="28">João Lucas Carvalho</option>
-                        <option value="29">Larissa Vieira Santos</option>
-                        <option value="30">Daniel Oliveira Rocha</option>
-                    </select>
-                </div>
+                
                 <div class="mb-3">
                     <label for="prova" class="form-label">Turma</label>
                     <select class="form-select" id="prova">
@@ -86,19 +55,66 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="prova" class="form-label">Tipo de Prova</label>
-                    <select class="form-select" id="prova">
-                        <option value="1">AV1</option>
-                        <option value="2">AV2</option>
-                    </select>
-                </div>
-                <div class="mb-3">
                     <label for="bimestre" class="form-label">Bimestre</label>
                     <select class="form-select" id="bimestre">
                         <option value="1">1° BIMESTRE</option>
                         <option value="2">2° BIMESTRE</option>
                         <option value="3">3° BIMESTRE</option>
                         <option value="4">4° BIMESTRE</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="materia" class="form-label">Materia</label>
+                    <select class="form-select" id="materia">
+                        <option value="1">Matemática</option>
+                        <option value="2">Português</option>
+                        <option value="3">Historia</option>
+                        <option value="4">Geografia</option>
+                        <option value="5">Fisica</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="student" class="form-label">ALUNO</label>
+                    <input type="text" class="form-control" id="student" placeholder="RA do aluno">
+                    <select class="form-select mt-3" id="student">
+                        <option value="" disabled selected>Selecione um aluno(a)</option>
+                        <option value="1" style="background-color: green; color: white;">Lucas Oliveira Campos</option>
+                        <option value="2">Ana Silva Souza</option>
+                        <option value="3" >Pedro Santos Lima</option>
+                        <option value="4" style="background-color: green; color: white;">Mariana Ferreira Alves</option>
+                        <option value="5">Rafaela Pereira Costa</option>
+                        <option value="6" style="background-color: green; color: white;">Carlos Rodrigues Gomes</option>
+                        <option value="7">Isabela Santos Cruz</option>
+                        <option value="8" style="background-color: green; color: white;">Gustavo Fernandes Pereira</option>
+                        <option value="9">Maria Eduarda Almeida</option>
+                        <option value="10">João Lucas Carvalho</option>
+                        <option value="11">Larissa Vieira Santos</option>
+                        <option value="12">Daniel Oliveira Rocha</option>
+                        <option value="13">Fernanda Souza Lima</option>
+                        <option value="14" style="background-color: green; color: white;">Mateus Silva Costa</option>
+                        <option value="15">Carolina Santos Alves</option>
+                        <option value="16">Gabriel Pereira Rodrigues</option>
+                        <option value="17" style="background-color: green; color: white;">Amanda Fernandes Gomes</option>
+                        <option value="18">Lucas Oliveira Campos</option>
+                        <option value="19" style="background-color: green; color: white;">Juliana Santos Cruz</option>
+                        <option value="20" style="background-color: green; color: white;">Rafaela Pereira Costa</option>
+                        <option value="21" style="background-color: green; color: white;">Ricardo Fernandes Pereira</option>
+                        <option value="22" style="background-color: green; color: white;">Larissa Vieira Santos</option>
+                        <option value="23" >Pedro Santos Lima</option>
+                        <option value="24">Mariana Ferreira Alves</option>
+                        <option value="25">Isabela Santos Cruz</option>
+                        <option value="26">Gustavo Fernandes Pereira</option>
+                        <option value="27">Maria Eduarda Almeida</option>
+                        <option value="28" style="background-color: green; color: white;">João Lucas Carvalho</option>
+                        <option value="29" style="background-color: green; color: white;">Larissa Vieira Santos</option>
+                        <option value="30" style="background-color: green; color: white;">Daniel Oliveira Rocha</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="prova" class="form-label">Tipo de Prova</label>
+                    <select class="form-select" id="prova">
+                        <option value="1">AV1</option>
+                        <option value="2">AV2</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -115,7 +131,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <script>
@@ -130,11 +145,15 @@
 
                 if (nota >= 1 && nota <= 10) {
                     document.getElementById("mensagemSucesso").style.display = "block";
-                    window.location.href = "/central/CentralProfessor/boletim/index.html"
                 } else {
                     document.getElementById("mensagemErro").style.display = "block";
                 }
             }
+
+            const quit = document.getElementById("x")
+            x.addEventListener("click", () => {
+                window.location.href = "/central/CentralProfessor/boletim/index.html"
+            })
         });
     </script>
 </body>

@@ -30,33 +30,71 @@
             position: relative;
             left: 30%;
         }
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="frame-meio p-4 border rounded">
-            <h1 class="mb-4">Atualizar Usuario</h1>
+            <h1 class="mb-4">Excluir Usuario</h1>
             <form>
-                <div class="mb-3">
-                    <label for="student" class="form-label">RA | RS</label>
-                    <input type="text" class="form-control" id="student" placeholder="RA ou RS">
-                </div>
-                <div class="mb-3">
-                    <label for="prova" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="student" placeholder="Nome">
-                </div>
-                <div class="mb-3">
-                    <label for="nota" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="nota" placeholder="Email">
-                </div>
-                <div class="mb-3">
-                    <label for="nota" class="form-label">Telefone</label>
-                    <input type="text" class="form-control" id="nota" placeholder="Telefone">
-                </div>
-                <div class="mb-3">
-                    <label for="nota" class="form-label">Senha</label>
-                    <input type="text" class="form-control" id="nota" placeholder="Telefone">
-                </div>
+                <table>
+                    <tr>
+                        <th colspan="4">Usuarios</th>
+                    </tr>
+                    <tr>
+                        <th>Nome</th>
+                        <th>RA/RS</th>
+                        <th>Remover</th>
+                        <th>Editar</th>
+                    </tr>
+                    <tr>
+                        <td id="Matemática_2">Lucão</td>
+                        <td id="Matemática_3">sss</td>
+                        <td>
+                            <a href="#">Alunos envolvidos</a>
+                        </td>
+                        <td>
+                            <a href="/central/CentralFuncionario/ocorrencias/editar.html">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Historia_2">João</td>
+                        <td id="Historia_3">ss</td>
+                        <td>
+                            <a href="#">Alunos envolvidos</a>
+                        </td>
+                        <td>
+                            <a href="/central/CentralFuncionario/cadastroDeUsuario/add/editarUsuario.html">Editar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Filosofia_2">11/06/2022</td>
+                        <td id="Filosofia_3">dde</td>
+                        <td>
+                            <a href="#">Alunos envolvidos</a>
+                        </td>
+                        <td>
+                            <a href="/central/CentralFuncionario/cadastroDeUsuario/add/editarUsuario.html">Editar</a>
+                        </td>
+                    </tr>
+                </table>
                 <button type="button" class="btn btn-primary" id="adicionarBtn">Atualizar</button>
             </form>
             <div id="mensagemSucesso" class="alert alert-success" style="display:none;">
@@ -65,7 +103,6 @@
         </div>
     </div>
     
-    removerCell.innerHTML = '<button class="btn-remover" onclick="removerRow(this)">Remover</button>'
 
     <a href=></a>
 

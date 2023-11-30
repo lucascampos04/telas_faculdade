@@ -49,12 +49,46 @@
             width: 150px;
             margin-left: 30vh;
         }
+
+        form{
+            height: 30vw;
+        }
+
+        #infosOco{
+            position: relative;
+            bottom: 1vh;
+        }
+
+        #adicionarBtn{
+            position: relative;
+            top: 1vh;
+            right: 24vh;
+        }
+
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="frame-meio p-4 border rounded">
-            <h1 class="mb-4">Editar Ocorrência</h1>
+            <h1 class="mb-4">Criar/Editar Ocorrência</h1>
             <form>
                 <div class="mb-3 input-group">
                     <label for="student" class="form-label">RA DO ALUNO :    &nbsp; &nbsp;</label>
@@ -65,13 +99,51 @@
                     <label for="data" class="form-label">Data</label>
                     <input type="date" name="data" id="data" class="form-control" placeholder="Data">
                 </div>
+
+
                 <br>
-                <div class="mb-3 input-group">
+                <div class="mb-3 input-group" id="infosOco">
                     <label for="infor" class="form-label">Informações da ocorrência : &nbsp;</label>
                     <textarea name="desc" id="infor" class="form-control" rows="4"  placeholder="Informações da ocorrência"></textarea>
                 </div>
                
-                <button type="button" class="btn btn-primary" id="adicionarBtn">Atualizar</button>
+                <button type="button" class="btn btn-primary" id="adicionarBtn">Criar</button>
+                <br> <br>
+                <table>
+                    <tr>
+                        <th colspan="4">Ocorrências</th>
+                    </tr>
+                    <tr>
+                        <th>RA</th>
+                        <th>Nome</th>
+                        <th>Turma</th>
+                        <TH>Deletar</TH>
+                    </tr>
+                    <tr>
+                        <td id="Matemática_2">001</td>
+                        <td id="Matemática_3">João</td>
+                        <td id="Matemática_3">1°A</td>
+                        <td id="remove">
+                            <a href="#">Remover</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Matemática_2">002</td>
+                        <td id="Matemática_3">Lucas</td>
+                        <td id="Matemática_3">1°A</td>
+                        <td id="remove">
+                            <a href="#">Remover</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="Matemática_2">003</td>
+                        <td id="Matemática_3">Osvaldo</td>
+                        <td id="Matemática_3">1°A</td>
+                        <td id="remove">
+                            <a href="#">Remover</a>
+                        </td>
+                    </tr>
+                </table>
             </form>
             <div id="mensagemSucesso" class="alert alert-success" style="display:none;">
                 Ocorrência atualizada com sucesso!

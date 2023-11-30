@@ -2,7 +2,6 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 .container {
@@ -139,7 +138,8 @@ select {
     width: 12%; 
     position: relative;
     left: 85vw;
-    bottom: 42.5vh;
+    bottom: 67.5vh;
+    border: 1px solid #0e0a0a;
 }
 
 .outra-tabela table {

@@ -23,22 +23,52 @@
 
         <div class="button-container">
             <input class="ra" placeholder="RA"/>
-            <button class="add_ra" id="addAluno">+</button>
+            <button class="add_ra" id="addAluno" style="width: 200px;">Buscar</button>
         </div>
-       
-        <div class="desc_ocorrencia">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Digite a descrição da ocorrência"></textarea>
-        </div>
+        <button id="addOc">
+            Adicionar Ocorrencia
+        </button>
 
         <div class="alunos_ocorrencias">
-            <table id="ocorrenciasTable">
+            <table>
                 <tr>
-                    <th>RA</th>
-                    <th>Aluno</th>
-                    <th>Descrição da Ocorrência</th>
+                    <th colspan="4">Ocorrências</th>
+                </tr>
+                <tr>
                     <th>Data</th>
-                    <th>Remover</th>
-                    <th>Atualizar</th> 
+                    <th>Descrição</th>
+                    <th>ALUNOS ENVOLVIDOS</th>
+                    <th>Editar</th>
+                </tr>
+                <tr>
+                    <td id="Matemática_2">29/11/2023</td>
+                    <td id="Matemática_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sapiente dolores! Sit consequuntur, ad, quaerat adipisci voluptatibus dolorum labore ipsa architecto excepturi suscipit aliquid repudiandae? Esse nostrum laudantium maxime maiores!</td>
+                    <td>
+                        <a href="#">Alunos envolvidos</a>
+                    </td>
+                    <td>
+                        <a href="/central/CentralFuncionario/ocorrencias/editar.html">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="Historia_2">11/06/2022</td>
+                    <td id="Historia_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, fuga? Repellendus harum nobis dolorem perferendis facere modi eos distinctio explicabo. Et veniam, hic cumque eaque qui maxime molestias ad deserunt?</td>
+                    <td>
+                        <a href="#">Alunos envolvidos</a>
+                    </td>
+                    <td>
+                        <a href="/central/CentralFuncionario/cadastroDeUsuario/add/editarUsuario.html">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="Filosofia_2">11/06/2022</td>
+                    <td id="Filosofia_3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, unde excepturi ipsum quam reprehenderit minus consequuntur vitae atque laboriosam praesentium, nemo quos commodi illum quibusdam repellat numquam esse tenetur aspernatur?</td>
+                    <td>
+                        <a href="#">Alunos envolvidos</a>
+                    </td>
+                    <td>
+                        <a href="/central/CentralFuncionario/cadastroDeUsuario/add/editarUsuario.html">Editar</a>
+                    </td>
                 </tr>
             </table>
         </div>
