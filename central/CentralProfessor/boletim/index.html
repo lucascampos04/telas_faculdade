@@ -23,9 +23,9 @@
         <h3>Cronograma</h3>
         <p>CASO NÃO ENCONTRE O ALUNO DESEJADO <br> FAÇA A BUSCA PELO RA DO MESMO</p>
         <div class="btns">
-            <button class="add">ADICIONAR NOTA</button>
-            <button class="put">EDITAR NOTA</button>
-            <button class="delete">REMOVER NOTA</button>
+            <button class="add" id="add">ADICIONAR NOTA</button>
+            <button class="put" id="put">EDITAR NOTA</button>
+            <button class="delete" id="del">REMOVER NOTA</button>
         </div>
     </span>
 
@@ -176,17 +176,22 @@
                 <td id="Redacao_faltas">10</td>
                 <td id="Redacao_limite">20</td>
                 <td id="Redacao_situacao">APROVADO</td>
-            </tr>
+            </tr> <a href=></a>
         </table>
     </div>
     <script src="./index.js"></script>
     <script>
-        function mudarBimestre() {
-          var select = document.getElementById("bimestre");
-          var bimestreSelecionado = select.options[select.selectedIndex].text;
-      
-          document.getElementById("bimestreHeader").innerHTML = bimestreSelecionado;
-        }
+         const add = document.getElementById("add")
+         const put = document.getElementById("put")
+         const del = document.getElementById("del")
+
+         add.addEventListener("click", () => {
+            window.location.href = "/central/CentralProfessor/boletim/eventos/addNotas.html"
+         })
+
+         put.addEventListener("click", () => {
+            window.location.href = "/central/CentralProfessor/boletim/eventos/editarNota.html"
+         })
       </script>
 </body>
 </html>
