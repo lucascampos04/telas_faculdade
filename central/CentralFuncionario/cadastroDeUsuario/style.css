@@ -96,7 +96,8 @@ h2 {
     font-size: 50px; 
     margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
-
+    position: relative;
+    right: 100px;
 }
 
 .card-container {
