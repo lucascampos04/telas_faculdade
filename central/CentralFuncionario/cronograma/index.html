@@ -21,178 +21,91 @@
         </div>
         <a href="/home/index.html">Sair</a>
     </div>
-    <select name="materia" id="materia" title="materia" style="display: none;">
-        <option value="" disabled selected>2024</option>
-        <option value="Matematica">2024</option>
-        <option value="Historia">2023</option>
-        <option value="Geografia">2022</option>
-        <option value="Quimica">2021</option>
-        <option value="Quimica">2020</option>
-        <option value="Quimica">2019</option>
-    </select>
-
-    <div class="filtros">
-        <select name="ano" id="year" title="Ano">
-            <option value="" disabled selected>2023</option>
-            <option value="1">2023</option>
-            <option value="1">2022</option>
-            <option value="1">2021</option>
-            <option value="1">2020</option>
-        </select>
-        <select name="ano" id="year" title="Ano">
-            <option value="" disabled selected>Nome do professor</option>
-            <option value="1">2023</option>
-            <option value="1">2022</option>
-            <option value="1">2021</option>
-            <option value="1">2020</option>
-        </select>
-
-        <span>
-            <input type="text" placeholder="Identificador do Usuario" id="identificador">
-            <button type="submit" id="btn_buscar" style="cursor: pointer;" onclick="is()">BUSCAR</button>
+    <div class="search">
+        <span> 
+            <label for="">Buscar</label>
+            <br>
+            <input type="text" placeholder="RA/RS" id="buscaCro">
+            <button type="submit" id="btn_buscar" style="cursor: pointer;" onclick="exibirCronograma()">BUSCAR</button>
+            
         </span>
-        
     </div>
-    <select name="turma" id="materia" title="materia">
-        <option value="" disabled selected>Selecione a turma</option>
-        <option value="Matematica">1°A</option>
-        <option value="Historia">1°B</option>
-        <option value="Geografia">2°A</option>
-        <option value="Quimica">2°B</option>
-        <option value="Quimica">3°A</option>
-        <option value="Quimica">3°B</option>
-    </select>
 
-    <h1 style="margin-left: 64px;">Professor Fernando</h1>
-    <div class="cronograma" id="cronograma">
-        <table>
-            <tr>
-                <th rowspan="2">Horario</th>
-                <th colspan="5">Cronograma</th>
-            </tr>
-            <tr>
-                <th>SEGUNDA-FEIRA</th>
-                <th>TERÇA-FEIRA</th>
-                <th>QUARTA-FEIRA</th>
-                <th>QUINTA-FEIRA</th>
-                <th>SEXTA-FEIRA</th>
-            </tr>
-            <tr>
-                <td id="Matemática">07:00</td>
-                <td id="Matemática_1">1°A</td>
-                <td id="Matemática_2">1°A</td>
-                <td id="Matemática_3">1°B</td>
-                <td id="Matemática_4">3°B</td>
-                <td id="Matemática_final">1°A</td>
-            </tr>
-            <tr>
-                <td id="Historia">07:50</td>
-                <td id="Historia_1">1°A</td>
-                <td id="Historia_2">1°A</td>
-                <td id="Historia_3">1°B</td>
-                <td id="Historia_4">2°A</td>
-                <td id="Historia_final">1°A</td>
-            </tr>
-            <tr>
-                <td id="Filosofia">08:40</td>
-                <td id="Filosofia_1">1°A</td>
-                <td id="Filosofia_2">3°B</td>
-                <td id="Filosofia_3">1°A</td>
-                <td id="Filosofia_4">3°A</td>
-                <td id="Filosofia_final">1°A</td>
-            </tr>
-            <tr>
-                <td id="Fisica">09:30</td>
-                <td id="Fisica_1">1°A</td>
-                <td id="Fisica_2">1°A</td>
-                <td id="Fisica_3">1°B</td>
-                <td id="Fisica_4">2°A</td>
-                <td id="Fisica_final">1°A</td>
-            </tr>
-            <tr>
-                <td id="Quimica">10:20</td>
-                <td id="Quimica_1">3°B</td>
-                <td id="Quimica_2">1°A</td>
-                <td id="Quimica_3">2°A</td>
-                <td id="Quimica_4">1°A</td>
-                <td id="Quimica_final">1°A</td>
-            </tr>
-            <tr>
-                <td id="Quimica">11:10</td>
-                <td id="Quimica_1">-</td>
-                <td id="Quimica_2">-</td>
-                <td id="Quimica_3">-</td>
-                <td id="Quimica_4">-</td>
-                <td id="Quimica_final">-</td>
-            </tr>
-            <tr>
-                <td id="Quimica">12:00</td>
-                <td id="Quimica_1">2°A</td>
-                <td id="Quimica_2">1°A</td>
-                <td id="Quimica_3">3°B</td>
-                <td id="Quimica_4">1°B</td>
-                <td id="Quimica_final">1°A</td>
-            </tr>
-            <tr>
-                <td id="Quimica">13:00</td>
-                <td id="Quimica_1">2°A</td>
-                <td id="Quimica_2">-</td>
-                <td id="Quimica_3">-</td>
-                <td id="Quimica_4">-</td>
-                <td id="Quimica_final">1°A</td>
-            </tr>
-            <tr>
-                <td id="Quimica">13:50</td>
-                <td id="Quimica_1">-</td>
-                <td id="Quimica_2">1°A</td>
-                <td id="Quimica_3">-</td>
-                <td id="Quimica_4">1°B</td>
-                <td id="Quimica_final">-</td>
-            </tr>
-            <tr>
-                <td id="Quimica">14:40</td>
-                <td id="Quimica_1">-</td>
-                <td id="Quimica_2">-</td>
-                <td id="Quimica_3">-</td>
-                <td id="Quimica_4">-</td>
-                <td id="Quimica_final">-</td>
-            </tr>
-            <tr>
-                <td id="Quimica">15:30</td>
-                <td id="Quimica_1">-</td>
-                <td id="Quimica_2">-</td>
-                <td id="Quimica_3">-</td>
-                <td id="Quimica_4">-</td>
-                <td id="Quimica_final">-</td>
-            </tr>
-            <tr>
-                <td id="Quimica">16:20</td>
-                <td id="Quimica_1">-</td>
-                <td id="Quimica_2">-</td>
-                <td id="Quimica_3">-</td>
-                <td id="Quimica_4">-</td>
-                <td id="Quimica_final">-</td>
-            </tr>
-            <tr>
-                <td id="Quimica">17:10</td>
-                <td id="Quimica_1">1°A</td>
-                <td id="Quimica_2">1°B</td>
-                <td id="Quimica_3">2°A</td>
-                <td id="Quimica_4">-</td>
-                <td id="Quimica_final">-</td>
-            </tr>
-            <tr>
-                <td id="Quimica">18:00</td>
-                <td id="Quimica_1">3°A</td>
-                <td id="Quimica_2">1°A</td>
-                <td id="Quimica_3">3°B</td>
-                <td id="Quimica_4">-</td>
-                <td id="Quimica_final">-</td>
-            </tr>
-        </table>
+    
+    <div class="pesquisa">
+        <div class="selectYears">
+            <select name="materia" id="materia" title="materia" style="display: block;" class="selectAno">
+                <option value="" disabled selected>2024</option>
+                <option value="Matematica">2024</option>
+                <option value="Historia">2023</option>
+                <option value="Geografia">2022</option>
+                <option value="Quimica">2021</option>
+                <option value="Quimica">2020</option>
+                <option value="Quimica">2019</option>
+            </select>
+        </div>
+        
+        <div class="dropProfessores">   
+        <select name="ALUNO" id="student" class="dropProfessores">
+            <option value="" disabled selected>Selecione um Professor</option>
+            <option value="1">Lucas Oliveira Campos</option>
+            <option value="2">Ana Silva Souza</option>
+            <option value="3">Pedro Santos Lima</option>
+            <option value="4">Mariana Ferreira Alves</option>
+            <option value="5">Rafaela Pereira Costa</option>
+            <option value="6">Carlos Rodrigues Gomes</option>
+            <option value="7">Isabela Santos Cruz</option>
+            <option value="8">Gustavo Fernandes Pereira</option>
+            <option value="9">Maria Eduarda Almeida</option>
+            <option value="10">João Lucas Carvalho</option>
+            <option value="11">Larissa Vieira Santos</option>
+            <option value="12">Daniel Oliveira Rocha</option>
+            <option value="13">Fernanda Souza Lima</option>
+            <option value="14">Mateus Silva Costa</option>
+            <option value="15">Carolina Santos Alves</option>
+            <option value="16">Gabriel Pereira Rodrigues</option>
+            <option value="17">Amanda Fernandes Gomes</option>
+            <option value="18">Lucas Oliveira Campos</option>
+            <option value="19">Juliana Santos Cruz</option>
+            <option value="20">Rafaela Pereira Costa</option>
+            <option value="21">Ricardo Fernandes Pereira</option>
+            <option value="22">Larissa Vieira Santos</option>
+            <option value="23">Pedro Santos Lima</option>
+            <option value="24">Mariana Ferreira Alves</option>
+            <option value="25">Isabela Santos Cruz</option>
+            <option value="26">Gustavo Fernandes Pereira</option>
+            <option value="27">Maria Eduarda Almeida</option>
+            <option value="28">João Lucas Carvalho</option>
+            <option value="29">Larissa Vieira Santos</option>
+            <option value="30">Daniel Oliveira Rocha</option>
+            <option value="31">Luana Oliveira Lima</option>
+            <option value="32">Guilherme Silva Souza</option>
+            <option value="33">Beatriz Santos Gomes</option>
+            <option value="34">Rafael Lima Almeida</option>
+            <option value="35">Camila Pereira Costa</option>
+            <option value="36">André Rodrigues Rocha</option>
+            <option value="37">Mariana Oliveira Alves</option>
+            <option value="38">Felipe Fernandes Cruz</option>
+            <option value="39">Laura Santos Pereira</option>
+            <option value="40">Thiago Carvalho Vieira</option>
+        </select>                    
+        </div>
+        
+
+        <div class="classT">
+            <select name="materia" id="materia" title="materia" style="display: block;" class="selectAno">
+                <option value="" disabled selected >XXXXXXXXXX</option>
+                <option value="Matematica">1°A</option>
+                <option value="Matematica">1°B</option>
+                <option value="Historia">2°A</option>
+                <option value="Geografia">2°B</option>
+                <option value="Quimica">3°A</option>
+                <option value="Quimica">3°B</option>
+                <option value="" >XXXXXXXXXX</option>
+            </select>
+        </div>
     </div>
-    <hr>
-    <!-- <h1 style="margin-left: 64px;">Alunos</h1>
+
     <div class="cronograma" id="cronograma">
         <table>
             <tr>
@@ -262,24 +175,213 @@
                 <td id="Quimica_4">1°B</td>
                 <td id="Quimica_final">1°A</td>
             </tr>
-        </table> -->
+            <tr>
+                <td id="Quimica">13:00</td>
+                <td id="Quimica_1">3°A</td>
+                <td id="Quimica_2">1°A</td>
+                <td id="Quimica_3">2°B</td>
+                <td id="Quimica_4">1°A</td>
+                <td id="Quimica_final">1°A</td>
+            </tr>
+            <tr>
+                <td id="Quimica">14:00</td>
+                <td id="Quimica_1">1°B</td>
+                <td id="Quimica_2">1°A</td>
+                <td id="Quimica_3">3°A</td>
+                <td id="Quimica_4">2°A</td>
+                <td id="Quimica_final">1°A</td>
+            </tr>
+            <tr>
+                <td id="Quimica">15:00</td>
+                <td id="Quimica_1">2°A</td>
+                <td id="Quimica_2">1°A</td>
+                <td id="Quimica_3">1°B</td>
+                <td id="Quimica_4">3°B</td>
+                <td id="Quimica_final">1°A</td>
+            </tr>
+            <tr>
+                <td id="Quimica">16:00</td>
+                <td id="Quimica_1">1°A</td>
+                <td id="Quimica_2">1°B</td>
+                <td id="Quimica_3">2°A</td>
+                <td id="Quimica_4">1°A</td>
+                <td id="Quimica_final">1°A</td>
+            </tr>
+            <tr>
+                <td id="Quimica">17:00</td>
+                <td id="Quimica_1">3°B</td>
+                <td id="Quimica_2">1°A</td>
+                <td id="Quimica_3">1°B</td>
+                <td id="Quimica_4">2°A</td>
+                <td id="Quimica_final">1°A</td>
+            </tr>
+            <tr>
+                <td id="Quimica">18:00</td>
+                <td id="Quimica_1">2°A</td>
+                <td id="Quimica_2">1°A</td>
+                <td id="Quimica_3">3°B</td>
+                <td id="Quimica_4">1°B</td>
+                <td id="Quimica_final">1°A</td>
+            </tr>
+        </table>
     </div>
+
+    <div class="tabelaAluno" id="cronogramaAluno" style="display: none;">
+        <table>
+            <tr>
+                <th rowspan="2">Horario</th>
+                <th colspan="5">Cronograma</th>
+            </tr>
+            <tr>
+                <th>SEGUNDA-FEIRA</th>
+                <th>TERÇA-FEIRA</th>
+                <th>QUARTA-FEIRA</th>
+                <th>QUINTA-FEIRA</th>
+                <th>SEXTA-FEIRA</th>
+            </tr>
+            <tr>
+                <td id="Matematica">07:00</td>
+                <td id="Matematica_1">Matematica</td>
+                <td id="Matematica_2">Matematica</td>
+                <td id="Matematica_3">Matematica</td>
+                <td id="Matematica_4">Quimica</td>
+                <td id="Matematica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Portugues">07:50</td>
+                <td id="Portugues_1">Matematica</td>
+                <td id="Portugues_2">Matematica</td>
+                <td id="Portugues_3">Matematica</td>
+                <td id="Portugues_4">Fisica</td>
+                <td id="Portugues_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Fisica">08:40</td>
+                <td id="Fisica_1">Matematica</td>
+                <td id="Fisica_2">Quimica</td>
+                <td id="Fisica_3">Matematica</td>
+                <td id="Fisica_4">Quimica</td>
+                <td id="Fisica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Redacao">09:30</td>
+                <td id="Redacao_1">Matematica</td>
+                <td id="Redacao_2">Matematica</td>
+                <td id="Redacao_3">Matematica</td>
+                <td id="Redacao_4">Fisica</td>
+                <td id="Redacao_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Filosofia">10:20</td>
+                <td id="Filosofia_1">Quimica</td>
+                <td id="Filosofia_2">Matematica</td>
+                <td id="Filosofia_3">Fisica</td>
+                <td id="Filosofia_4">Matematica</td>
+                <td id="Filosofia_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Quimica">11:10</td>
+                <td id="Quimica_1">Matematica</td>
+                <td id="Quimica_2">Matematica</td>
+                <td id="Quimica_3">Matematica</td>
+                <td id="Quimica_4">Fisica</td>
+                <td id="Quimica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Quimica">12:00</td>
+                <td id="Quimica_1">Fisica</td>
+                <td id="Quimica_2">Matematica</td>
+                <td id="Quimica_3">Quimica</td>
+                <td id="Quimica_4">Matematica</td>
+                <td id="Quimica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Quimica">13:00</td>
+                <td id="Quimica_1">Quimica</td>
+                <td id="Quimica_2">Matematica</td>
+                <td id="Quimica_3">Fisica</td>
+                <td id="Quimica_4">Matematica</td>
+                <td id="Quimica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Quimica">14:00</td>
+                <td id="Quimica_1">Matematica</td>
+                <td id="Quimica_2">Matematica</td>
+                <td id="Quimica_3">Quimica</td>
+                <td id="Quimica_4">Fisica</td>
+                <td id="Quimica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Quimica">15:00</td>
+                <td id="Quimica_1">Fisica</td>
+                <td id="Quimica_2">Matematica</td>
+                <td id="Quimica_3">Matematica</td>
+                <td id="Quimica_4">Quimica</td>
+                <td id="Quimica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Quimica">16:00</td>
+                <td id="Quimica_1">Matematica</td>
+                <td id="Quimica_2">Matematica</td>
+                <td id="Quimica_3">Fisica</td>
+                <td id="Quimica_4">Matematica</td>
+                <td id="Quimica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Quimica">17:00</td>
+                <td id="Quimica_1">Quimica</td>
+                <td id="Quimica_2">Matematica</td>
+                <td id="Quimica_3">Fisica</td>
+                <td id="Quimica_4">Matematica</td>
+                <td id="Quimica_final">Matematica</td>
+            </tr>
+            <tr>
+                <td id="Quimica">18:00</td>
+                <td id="Quimica_1">Fisica</td>
+                <td id="Quimica_2">Matematica</td>
+                <td id="Quimica_3">Quimica</td>
+                <td id="Quimica_4">Matematica</td>
+                <td id="Quimica_final">Matematica</td>
+            </tr>
+        </table>
+    </div>
+    
     <script>
-        const h = document.getElementById("home")
-        h.addEventListener("click", () => {
-            window.location.href = "/central/CentralFuncionario/index.html"
-        })
+       const professor = document.getElementById("cronograma");
+        const aluno = document.getElementById("cronogramaAluno");
+        const buscaCro = document.getElementById("buscaCro");
+        const selectClassT = document.getElementById("classT");
 
-        const i = document.getElementById("identificador").value
+        window.exibirCronograma = () => {
+            // Tabela de aluno
+            if (buscaCro.value === "001") {
+                aluno.style.display = "block";
+                professor.style.display = "none";
 
-        function is(){
-            if (i === "RA"){
-                alert("Identificador invalido")
-            } else {
-                alert("Sucesso")
-        }
-        }
-        
+                // Alterar dinamicamente as opções do segundo select
+                const classTOptions = selectClassT.options;
+                classTOptions.length = 0;
+
+                // Adicionar novas opções para 1°A, 1°B, etc.
+                const classes = ["1°A", "1°B", "2°A", "2°B", "3°A", "3°B"];
+                for (const className of classes) {
+                    const option = document.createElement("option");
+                    option.value = className;
+                    option.textContent = className;
+                    classTOptions.add(option);
+                }
+
+                return;
+            }
+
+            // Tabela de Professor
+            if (buscaCro.value === "002") {
+                aluno.style.display = "none";
+                professor.style.display = "block";
+                return;
+            }
+        };
+
     </script>
 </body>
 </html>
