@@ -1,11 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+    width: 1280px;
+    height: 720px;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #edf2f4;
+    overflow: hidden;
 }
-
 .container {
-    background-color: #3498db;
+    background-color: #023e8a;
     color: white;
     padding: 20px;
     text-align: center;
@@ -33,7 +36,15 @@ select {
     left: 83vw;
     top: 6vh;
     width: 200px;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 800;
+    color: white;
+    -webkit-text-stroke: 1px rgb(33, 33, 109);
+    margin-bottom: 20px;
 }
 
 select, p{
@@ -43,27 +54,56 @@ select, p{
 p{
     font-size: 20px;
 }
-
-.cronograma table {
-    width: 80%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    margin-left: 30px;
+.btnTr{
+    display: flex;
+    gap: 2px;
+    position: relative;
+    top: 7vh;
+    left: 154vh;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 15px;
+.btnTr button{
+    width: 30px;
+    border: 1px solid #3498db;
+    background-color: #ffffff;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.cronograma table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.cronograma th, .cronograma td {
+    border: 1px solid #0e0a0a;
+    padding: 12px;
     text-align: center;
 }
 
-th {
-    background-color: #3498db;
+.cronograma th {
+    font-weight: bold;
+    background-color: #3a7ca5;
     color: white;
 }
 
-td {
-    background-color: #ecf0f1;
+.cronograma th:hover {
+    font-weight: bold;
+    background-color: rgb(152, 212, 212);
+    color: white;
+}
+
+
+.cronograma td {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.cronograma td:hover{
+    background-color: #a7a3a3;
+    color: black;
 }
 
 #home {

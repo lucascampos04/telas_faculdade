@@ -13,22 +13,23 @@
     </div>
     <div class="barra">
         <div class="barra-menu">
-            <a href="/central/CentralFuncionario/boletim/index.html" target="_blank">Boletim</a>
-            <a href="/central/CentralFuncionario/cronograma/index.html" target="_blank">Cronograma</a>
-            <a href="/central/CentralFuncionario/ocorrencias/index.html" target="_blank">Ocorrências</a>
-            <a href="/central/CentralFuncionario/cadastroDeUsuario/index.html" target="_blank"  >Cadastrar usuario</a>
+            <a href="/central/CentralFuncionario/boletim/index.html">Boletim</a>
+            <a href="/central/CentralFuncionario/cronograma/index.html">Cronograma</a>
+            <a href="/central/CentralFuncionario/ocorrencias/index.html">Ocorrências</a>
+            <a href="/central/CentralFuncionario/cadastroDeUsuario/index.html"  >Cadastrar usuario</a>
+            <a href="/central/CentralFuncionario/index.html"  >Central</a>
         </div>
         <a href="/home/index.html">Sair</a>
     </div>
      <span class="bolCrono">
-        <p>CASO NÃO ENCONTRE O ALUNO DESEJADO <br> FAÇA A BUSCA PELO RA DO MESMO</p>
+        <p style="color: red;">CASO NÃO ENCONTRE O ALUNO DESEJADO FAÇA A BUSCA PELO RA DO MESMO</p>
     </span> 
-
+    <br>
     <div class="frame-meio">
          <span class="search">
             <input type="text" placeholder="RA DO ALUNO">
             <button type="submit" id="btn_buscar" style="cursor: pointer;">BUSCAR</button>
-        </span>
+        </span> <br>
 
         <br>
         <div class="selects">
@@ -49,53 +50,56 @@
                 <option value="">3º A</option>
                 <option value="">3º B</option>
             </select>
+            <div class="right">
+                <select name="ALUNO" id="student">
+                    <option value="" disabled selected>Selecione um aluno(a)</option>
+                    <option value="1">Lucas Oliveira Campos </option>
+                    <option value="2">Ana Silva Souza</option>
+                    <option value="3">Pedro Santos Lima</option>
+                    <option value="4">Mariana Ferreira Alves</option>
+                    <option value="5">Rafaela Pereira Costa</option>
+                    <option value="6">Carlos Rodrigues Gomes</option>
+                    <option value="7">Isabela Santos Cruz</option>
+                    <option value="8">Gustavo Fernandes Pereira</option>
+                    <option value="9">Maria Eduarda Almeida</option>
+                    <option value="10">João Lucas Carvalho</option>
+                    <option value="11">Larissa Vieira Santos</option>
+                    <option value="12">Daniel Oliveira Rocha</option>
+                    <option value="13">Fernanda Souza Lima</option>
+                    <option value="14">Mateus Silva Costa</option>
+                    <option value="15">Carolina Santos Alves</option>
+                    <option value="16">Gabriel Pereira Rodrigues</option>
+                    <option value="17">Amanda Fernandes Gomes</option>
+                    <option value="18">Lucas Oliveira Campos</option>
+                    <option value="19">Juliana Santos Cruz</option>
+                    <option value="20">Rafaela Pereira Costa</option>
+                    <option value="21">Ricardo Fernandes Pereira</option>
+                    <option value="22">Larissa Vieira Santos</option>
+                    <option value="23">Pedro Santos Lima</option>
+                    <option value="24">Mariana Ferreira Alves</option>
+                    <option value="25">Isabela Santos Cruz</option>
+                    <option value="26">Gustavo Fernandes Pereira</option>
+                    <option value="27">Maria Eduarda Almeida</option>
+                    <option value="28">João Lucas Carvalho</option>
+                    <option value="29">Larissa Vieira Santos</option>
+                    <option value="30">Daniel Oliveira Rocha</option>
+                </select>
+        
+                <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px;">
+                    <option value="" disabled selected>1° BIMESTRE</option>
+                    <option value="1">1° BIMESTRE</option>
+                    <option value="2">2° BIMESTRE</option>
+                    <option value="3">3° BIMESTRE</option>
+                    <option value="4">4° BIMESTRE</option>
+                </select>
+            </div>
     
-            <select name="ALUNO" id="student">
-                <option value="" disabled selected>Selecione um aluno(a)</option>
-                <option value="1">Lucas Oliveira Campos </option>
-                <option value="2">Ana Silva Souza</option>
-                <option value="3">Pedro Santos Lima</option>
-                <option value="4">Mariana Ferreira Alves</option>
-                <option value="5">Rafaela Pereira Costa</option>
-                <option value="6">Carlos Rodrigues Gomes</option>
-                <option value="7">Isabela Santos Cruz</option>
-                <option value="8">Gustavo Fernandes Pereira</option>
-                <option value="9">Maria Eduarda Almeida</option>
-                <option value="10">João Lucas Carvalho</option>
-                <option value="11">Larissa Vieira Santos</option>
-                <option value="12">Daniel Oliveira Rocha</option>
-                <option value="13">Fernanda Souza Lima</option>
-                <option value="14">Mateus Silva Costa</option>
-                <option value="15">Carolina Santos Alves</option>
-                <option value="16">Gabriel Pereira Rodrigues</option>
-                <option value="17">Amanda Fernandes Gomes</option>
-                <option value="18">Lucas Oliveira Campos</option>
-                <option value="19">Juliana Santos Cruz</option>
-                <option value="20">Rafaela Pereira Costa</option>
-                <option value="21">Ricardo Fernandes Pereira</option>
-                <option value="22">Larissa Vieira Santos</option>
-                <option value="23">Pedro Santos Lima</option>
-                <option value="24">Mariana Ferreira Alves</option>
-                <option value="25">Isabela Santos Cruz</option>
-                <option value="26">Gustavo Fernandes Pereira</option>
-                <option value="27">Maria Eduarda Almeida</option>
-                <option value="28">João Lucas Carvalho</option>
-                <option value="29">Larissa Vieira Santos</option>
-                <option value="30">Daniel Oliveira Rocha</option>
-            </select>
-    
-            <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px;">
-                <option value="" disabled selected>1° BIMESTRE</option>
-                <option value="1">1° BIMESTRE</option>
-                <option value="2">2° BIMESTRE</option>
-                <option value="3">3° BIMESTRE</option>
-                <option value="4">4° BIMESTRE</option>
-            </select>
+           
         </div>
         
 
-         
-        <h1>NOTAS</h1>
+        <div class="tab">
+            <h1>NOTAS</h1>
         <h5 id="alunoSelecionado">ALUNO SELECIONADO</h5>
     
         <table>
@@ -175,6 +179,8 @@
                 <td id="Redacao_situacao">APROVADO</td>
             </tr> <a href=></a>
         </table>
+        </div>
+        
     </div>
     <script>
         const h = document.getElementById("home")

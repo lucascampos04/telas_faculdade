@@ -19,12 +19,19 @@
         </div>
         <a href="/home/index.html">Sair</a>
     </div>
-    <h2>Cronograma</h2>
-    <div class="cronograma" id="cronograma">
-        <table>
+    <div class="englobe">
+        <h2>Cronograma</h2>
+    <div class="cronograma">
+        <div class="turnoTrocar">
+            <button id="btnTrocarTurnoMatutino">1</button>
+            <button id="btnTrocarTurnoVespertino" style="background-color: #b5e2fa;">2</button>
+        </div>
+
+        <!-- matutino -->
+        <table is="matutino">
             <tr>
                 <th rowspan="2">Horario</th>
-                <th colspan="5">Cronograma</th>
+                <th colspan="5">Cronograma Vespertino</th>
             </tr>
             <tr>
                 <th>SEGUNDA-FEIRA</th>
@@ -34,7 +41,7 @@
                 <th>SEXTA-FEIRA</th>
             </tr>
             <tr>
-                <td id="Matematica">07:00</td>
+                <td id="Matematica">13:00</td>
                 <td id="Matematica_1">-</td>
                 <td id="Matematica_2">Historia</td>
                 <td id="Matematica_3">-</td>
@@ -42,7 +49,7 @@
                 <td id="Matematica_final">-</td>
             </tr>
             <tr>
-                <td id="Matematica">07:50</td>
+                <td id="Matematica">13:50</td>
                 <td id="Matematica_1">Historia</td>
                 <td id="Matematica_2">-</td>
                 <td id="Matematica_3">Matemática</td>
@@ -50,7 +57,7 @@
                 <td id="Matematica_final">Historia</td>
             </tr>
             <tr>
-                <td id="Matematica">08:40</td>
+                <td id="Matematica">14:40</td>
                 <td id="Matematica_1">Português</td>
                 <td id="Matematica_2">-</td>
                 <td id="Matematica_3">Português</td>
@@ -58,7 +65,7 @@
                 <td id="Matematica_final">Historia</td>
             </tr>
             <tr>
-                <td id="Matematica">09:30</td>
+                <td id="Matematica">15:30</td>
                 <td id="Matematica_1">Português</td>
                 <td id="Matematica_2">-</td>
                 <td id="Matematica_3">Português</td>
@@ -66,7 +73,7 @@
                 <td id="Matematica_final">Historia</td>
             </tr>
             <tr>
-                <td id="Matematica">10:30</td>
+                <td id="Matematica">16:30</td>
                 <td id="Matematica_1">-</td>
                 <td id="Matematica_2">-</td>
                 <td id="Matematica_3">-</td>
@@ -74,7 +81,7 @@
                 <td id="Matematica_final">-</td>
             </tr>
             <tr>
-                <td id="Matematica">11:20</td>
+                <td id="Matematica">17:20</td>
                 <td id="Matematica_1">-</td>
                 <td id="Matematica_2">Português</td>
                 <td id="Matematica_3">-</td>
@@ -82,70 +89,87 @@
                 <td id="Matematica_final">-</td>
             </tr>
             <tr>
-                <td id="Matematica">12:00</td>
+                <td id="Matematica">18:00</td>
                 <td id="Matematica_1">Português</td>
                 <td id="Matematica_2">Português</td>
                 <td id="Matematica_3">-</td>
                 <td id="Matematica_4">Matemática</td>
                 <td id="Matematica_final">Historia</td>
             </tr>
+        </table>
+        
+        <!-- vespertino -->
+        <table id="vespertino" style="display: none;">
             <tr>
-                <td id="Matematica">13:30</td>
-                <td id="Matematica_1">Matemática</td>
+                <th rowspan="2">Horario</th>
+                <th colspan="5">Cronograma Vespertino</th>
+            </tr>
+            <tr>
+                <th>SEGUNDA-FEIRA</th>
+                <th>TERÇA-FEIRA</th>
+                <th>QUARTA-FEIRA</th>
+                <th>QUINTA-FEIRA</th>
+                <th>SEXTA-FEIRA</th>
+            </tr>
+            <tr>
+                <td id="Matematica">13:00</td>
+                <td id="Matematica_1">-</td>
+                <td id="Matematica_2">Historia</td>
+                <td id="Matematica_3">-</td>
+                <td id="Matematica_4">Historia</td>
+                <td id="Matematica_final">-</td>
+            </tr>
+            <tr>
+                <td id="Matematica">13:50</td>
+                <td id="Matematica_1">Historia</td>
                 <td id="Matematica_2">-</td>
                 <td id="Matematica_3">Matemática</td>
                 <td id="Matematica_4">-</td>
                 <td id="Matematica_final">Historia</td>
             </tr>
             <tr>
-                <td id="Historia">14:20</td>
-                <td id="Historia_1">Matemática</td>
-                <td id="Historia_2">-</td>
-                <td id="Historia_3">Matemática</td>
-                <td id="Historia_4">Filosofia</td>
-                <td id="Historia_final">Historia</td>
+                <td id="Matematica">14:40</td>
+                <td id="Matematica_1">Português</td>
+                <td id="Matematica_2">-</td>
+                <td id="Matematica_3">Português</td>
+                <td id="Matematica_4">-</td>
+                <td id="Matematica_final">Historia</td>
             </tr>
             <tr>
-                <td id="Filosofia">15:10</td>
-                <td id="Filosofia_1">-</td>
-                <td id="Filosofia_2">Química</td>
-                <td id="Filosofia_3">Filosofia</td>
-                <td id="Filosofia_4">Química</td>
-                <td id="Filosofia_final">Química</td>
+                <td id="Matematica">15:30</td>
+                <td id="Matematica_1">Português</td>
+                <td id="Matematica_2">-</td>
+                <td id="Matematica_3">Português</td>
+                <td id="Matematica_4">-</td>
+                <td id="Matematica_final">Historia</td>
             </tr>
             <tr>
-                <td id="Fisica">16:00</td>
-                <td id="Fisica_1">Filosofia</td>
-                <td id="Fisica_2">Física</td>
-                <td id="Fisica_3">Filosofia</td>
-                <td id="Fisica_4">Física</td>
-                <td id="Fisica_final">Física</td>
+                <td id="Matematica">16:30</td>
+                <td id="Matematica_1">-</td>
+                <td id="Matematica_2">-</td>
+                <td id="Matematica_3">-</td>
+                <td id="Matematica_4">Matemática</td>
+                <td id="Matematica_final">-</td>
             </tr>
             <tr>
-                <td id="Quimica">16:50</td>
-                <td id="Quimica_1">Química</td>
-                <td id="Quimica_2">Português</td>
-                <td id="Quimica_3">Química</td>
-                <td id="Quimica_4">Redação</td>
-                <td id="Quimica_final">Química</td>
+                <td id="Matematica">17:20</td>
+                <td id="Matematica_1">-</td>
+                <td id="Matematica_2">Português</td>
+                <td id="Matematica_3">-</td>
+                <td id="Matematica_4">Matemática</td>
+                <td id="Matematica_final">-</td>
             </tr>
             <tr>
-                <td id="Biologia">17:40</td>
-                <td id="Biologia_1">-</td>
-                <td id="Biologia_2">Geografia</td>
-                <td id="Biologia_3">-</td>
-                <td id="Biologia_4">Geografia</td>
-                <td id="Biologia_final">Física</td>
-            </tr>
-            <tr>
-                <td id="Redacao">18:30</td>
-                <td id="Redacao_1">-</td>
-                <td id="Redacao_2">Português</td>
-                <td id="Redacao_3">Biologia</td>
-                <td id="Redacao_4">Química</td>
-                <td id="Redacao_final">Química</td>
+                <td id="Matematica">18:00</td>
+                <td id="Matematica_1">Português</td>
+                <td id="Matematica_2">Português</td>
+                <td id="Matematica_3">-</td>
+                <td id="Matematica_4">Matemática</td>
+                <td id="Matematica_final">Historia</td>
             </tr>
         </table>
+    </div>
+    
     </div>
     <div class="outra-tabela">
         <table>
@@ -185,10 +209,38 @@
     </div>
     </div>
     <script>
-        const h = document.getElementById("home")
-        h.addEventListener("click", () => {
-            window.location.href = "/central/centralAluno/index.html"
-        })
+        function addEvent(element, event, callback) {
+            if (element.addEventListener) {
+                element.addEventListener(event, callback, false);
+            } else if (element.attachEvent) {
+                element.attachEvent("on" + event, callback);
+            }
+        }
+
+        addEvent(document, "DOMContentLoaded", function () {
+            const btnTrocarTurnoMatutino = document.getElementById("btnTrocarTurnoMatutino");
+            const btnTrocarTurnoVespertino = document.getElementById("btnTrocarTurnoVespertino");
+            const tableMatutino = document.getElementById("matutino");
+            const tableVespertino = document.getElementById("vespertino");
+
+            btnTrocarTurnoMatutino.addEventListener("click", () => {
+                if (tableMatutino) {
+                    tableMatutino.style.display = "block";
+                }
+                if (tableVespertino) {
+                    tableVespertino.style.display = "none";
+                }
+            });
+
+            btnTrocarTurnoVespertino.addEventListener("click", () => {
+                if (tableMatutino) {
+                    tableMatutino.style.display = "none";
+                }
+                if (tableVespertino) {
+                    tableVespertino.style.display = "block";
+                }
+            });
+        });
     </script>
 </body>
 </html>

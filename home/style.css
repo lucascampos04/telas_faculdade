@@ -1,76 +1,71 @@
 body {
+    width: 1280px;
+    height: 720px;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    background-color: #edf2f4;
+    overflow: hidden;
 }
 
-footer {
-    background-color: rgb(240, 240, 240);
-    color: black;
-}
-
-.container-fluid {
-    border: 1px solid blue;
-    height: 50vw;
-    background: linear-gradient(to top, rgb(137, 137, 197), rgb(137, 137, 197), rgb(137, 137, 197), blue);
-}
-
-.container-fluid nav {
+nav{
+    box-shadow: 0 5px 5px black;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 15vh;
+    background-color: #023e8a;
+    margin: 0%;
+    padding-top: 30px;
 }
 
-.container-fluid nav button {
-    width: 200px;
-    height: 40px;
-    text-align: center;
-}
-
-.container-fluid h1 {
-    text-align: center;
-    font-size: 80px;
-    font-weight: bold;
+nav h1{
+    font-weight: 900;
+    margin-left: 30px;
+    font-size: 60px;
     color: white;
-    -webkit-text-stroke: 1px blue;
-    cursor: pointer;
+    -webkit-text-stroke: 1px #3a86ff;
 }
 
-.card {
-    background-color: white;
-    border: 1px solid #ddd; 
-    border-radius: 10px; 
-    margin-bottom: 20px;
+nav .btn{ 
+    margin-right: 30px;
+    width: 190px;
+    font-weight: 900;
+    font-size: 20px;
 }
 
-.card-title {
-    color: rgb(137, 137, 197); 
-}
-
-.card-text {
-    color: black; 
-}
-
-main{
-    position: relative;
-    top: 10vh;
-    border: 1px solid black;
-    box-shadow: 5px 5px 10px black;
-    box-shadow: 50px;
-    transition: 0.5s;
-}
-
-main:hover{
-    box-shadow: 0px 5px 5px black;
+.row{
+    margin: 0%;
 }
 
 .card{
-    font-weight: 500;
-    transition: 0.5s;
+    border: 1px solid black;
+    box-shadow: 0 3px 3px #001219;
+    transition: 0.3s;
 }
 
 .card:hover{
-    background-color: rgb(248, 247, 247);
-    box-shadow: 0 10px 10px black;
+    box-shadow: 0 5px 3px #001219;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+p{
+    font-weight: 500;
+}
+
+footer{
+    background-color: #f8f7ff;
+    position: relative;
+    top: 5vh;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span{
+    font-weight: 900;
 }
