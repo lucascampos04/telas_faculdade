@@ -21,26 +21,36 @@
     </div>
 
     <div class="frame-meio">
-        <div class="sel">
-             <select name="ANO" id="year" title="ANO" >
-            <option value="" disabled selected>2023</option>
-            <option value="1">2023</option>
-            <option value="2">2022</option>
-            <option value="3">2021</option>
-            <option value="4">2020</option>
-        </select>
-        <select name="Bimestre" id="bi" title="Bimestre" >
-            <option value="" disabled selected>1° Bimestre</option>
-            <option value="1">1° Bimestre</option>
-            <option value="2">2° Bimestre</option>
-            <option value="3">3° Bimestre</option>
-            <option value="4">4° Bimestre</option>
-        </select>
-        <h3 class="turma">Turma : 1°A</h3>
+        <div class="sel" style="display: flex; align-items: center; justify-content: center; position: relative; left: 100px;">
+            <div class="sl" style="display: flex;">
+            <label for="" style="position: relative; bottom: 3vh; left: 17vh; font-weight: 900; font-size: 20px;">Selecione Ano</label>
+            <select name="ANO" id="year" title="ANO" >
+                <option value="" disabled selected>2023</option>
+                <option value="1">2023</option>
+                <option value="2">2022</option>
+                <option value="3">2021</option>
+                <option value="4">2020</option>
+            </select>
+            </div>
+            <div class="sc" style="display: flex; margin: 0%; position: relative; right: 20vh;">
+                <label for="" style="position: relative; bottom: 3vh; left: 23vh; font-weight: 900; font-size: 20px; ">Selecione Bimestre</label>
+                <select name="Bimestre" id="bi" title="Bimestre" >
+                    <option value="" disabled selected>1° Bimestre</option>
+                    <option value="1">1° Bimestre</option>
+                    <option value="2">2° Bimestre</option>
+                    <option value="3">3° Bimestre</option>
+                    <option value="4">4° Bimestre</option>
+                </select>
+            </div>
+        <div class="t" style="display: flex; position: relative; right: 26vh;">
+            <label for="" style="position: relative; bottom: -3vh; left: 9vh; font-weight: 900; font-size: 20px; ">Turma</label>
+            <h3 class="turma">Turma : 1°A</h3>
         </div>
         
-        <h1 id="no">NOTAS</h1>
-        <div class="notasB">
+        </div>
+        
+        <h1 id="no" style="position: relative; bottom: 30px;">NOTAS</h1>
+        <div class="notasB" style="position: relative; bottom: 50px;">
             <table>
                 <tr>
                     <th rowspan="2">Matérias</th>
