@@ -9,24 +9,27 @@
 </head>
 <body>
     <div class="container">
-        <div class="barra">
+        <header>
+            <h1 style="cursor: pointer;" id="home">Ocorrências</h1>
+        </header>
+        <div class="barra" style="width: 180vh;">
             <div class="barra-menu">
-                <a href="/central/CentralFuncionario/boletim/index.html">Boletim</a>
-                <a href="/central/CentralFuncionario/cronograma/index.html">Cronograma</a>
-                <a href="/central/CentralFuncionario/ocorrencias/index.html">Ocorrências</a>
-                <a href="/central/CentralFuncionario/cadastroDeUsuario/index.html"  >Cadastrar usuario</a>
-                <a href="/central/CentralFuncionario/index.html">Central</a>
+                <a href="/central/CentralFuncionario/boletim/index.html" style="color: white; ">Boletim</a>
+                <a href="/central/CentralFuncionario/cronograma/index.html" style="color: white; position: relative; right: 80px;">Cronograma</a>
+                <a href="/central/CentralFuncionario/ocorrencias/index.html" style="color: white; position: relative; right: 150px;">Ocorrências</a>
+                <a href="/central/CentralFuncionario/cadastroDeUsuario/index.html" style="color: white; position: relative; right: 210px;" >Cadastrar usuario</a>
+                <a href="/central/CentralFuncionario/index.html" style="color: white;  position: relative; right: 283px;">Central</a>
             </div>
-            <a href="/home/index.html" id="quit">Sair</a>
+            <a href="/home/index.html" id="quit" style="color: white;  position: relative; right: 10px;">Sair</a>
         </div>
-        <h1 style="cursor: pointer;" id="home">Ocorrências</h1>
+        
 
-        <div class="button-container">
+        <div class="button-container" style="position: relative; top: 90px;">
             <input class="ra" placeholder="RA"/>
             <button class="add_ra" id="addAluno">Buscar</button>
         </div>
 
-        <button class="create" id="cr">Criar Ocorrência</button>
+        <button class="create" id="cr" style="position: relative; top: 15px; left: 60vh;">Criar Ocorrência</button>
 
         <div class="alunos_ocorrencias">
             <table>
