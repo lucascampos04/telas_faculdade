@@ -19,10 +19,10 @@
             <a href="/central/CentralProfessor/croograma/index.html">Cronograma</a>
             <a href="/central/CentralProfessor/ocorrencias/index.html">Ocorrências</a>
         </div>
-        <a href="/home/index.html">Sair</a>
+        <a href="/home/index.html" style="position: relative; right: 10vh;">Sair</a>
     </div>
     <span class="bolCrono">    
-        <p>CASO NÃO ENCONTRE O ALUNO DESEJADO <br> FAÇA A BUSCA PELO RA DO MESMO</p>
+        <p style="font-size: 14px; position: relative; right: 20vh;">CASO NÃO ENCONTRE O ALUNO DESEJADO <br> FAÇA A BUSCA PELO RA DO MESMO</p>
         <div class="btns">
             <button class="add" id="add">ADICIONAR/EDITAR NOTA</button>
         </div>
@@ -37,7 +37,7 @@
         </span>
 
         <br>
-
+        <label for="" style="position: relative; left: 20vh; bottom: 5vh; font-size: 30px;">Ano</label>
         <select name="ANO" id="year" title="ANO" >
             <option value="" disabled selected onchange=mudarBimestre()>2023</option>
             <option value="1">2023</option>
@@ -46,7 +46,8 @@
             <option value="4">2020</option>
         </select>
 
-        <select name="TURMAS" id="class">
+        <label for="" style="position: relative; left: 15vh; bottom: 5vh; font-size: 30px;">Classe</label>
+        <select name="TURMAS" id="class" style="position: relative; left: 1vh;">
             <option value="" disabled selected>1º A</option>
             <option value="">1º A</option>
             <option value="">1º B</option>
@@ -56,7 +57,8 @@
             <option value="">3º B</option>
         </select>
 
-        <select name="ALUNO" id="student">
+        <label for="" style="position: relative; left: 5vh; bottom: 5vh; font-size: 20px; font-weight: 900;">Selecione um Aluno</label>
+        <select name="ALUNO" id="student" style="position: relative; left: -20vh;">
             <option value="" disabled selected>Selecione um aluno(a)</option>
             <option value="1">Lucas Oliveira Campos </option>
             <option value="2">Ana Silva Souza</option>
@@ -90,7 +92,8 @@
             <option value="30">Daniel Oliveira Rocha</option>
         </select>
 
-        <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px;">
+        <label for="" style="position: relative; left: -15vh; bottom: 5vh; font-size: 20px; font-weight: 900;">Selecione Bimestre</label>
+        <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px; position: relative; left: 135vh; bottom: 5.4vh;">
             <option value="" disabled selected>1° BIMESTRE</option>
             <option value="1">1° BIMESTRE</option>
             <option value="2">2° BIMESTRE</option>
