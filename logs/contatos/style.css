@@ -17,12 +17,12 @@ body {
 }
 
 img{
-    width: 400px;
+    width: 500px;
     height: 730px;
 }
 
 .container-left{
-    width: 120%;
+    width: 170%;
     height: 100vh;
 }
 .container-right{
@@ -36,7 +36,7 @@ span h1{
     font-weight: 900;
     height: 10vh;
     margin: 0%;
-    background: #061c36;
+    background: #01203C;
     color: white;
     -webkit-text-stroke: 10x white;
 }

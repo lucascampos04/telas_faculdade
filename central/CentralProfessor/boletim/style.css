@@ -8,6 +8,10 @@ body {
     overflow: hidden;
 }
 
+select{
+    position: relative;
+}
+
 .barra {
     background-color: #2c3e50;
     color: white;
@@ -171,40 +175,26 @@ h3{
     background-color: #27ae60;
 }
 
-.frame-meio {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
 
-table {
+table{
+    border: 1px solid black;
+    width: 90vw;
+    height: 20vw;
     position: relative;
-    left: 10vw;
-    bottom: 19.9vh;
-    width: 80%;
-    height: 50px;
-    border-collapse: collapse;
+    bottom: 13vh;
+    left: 20vh;
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: none;
+    padding: 8px;
     text-align: center;
 }
 
 th {
-    background-color: #3498db;
+    background-color: #3a86ff;
     color: white;
-}
-
-tr.aprovado {
-    background-color: #2ecc71;
-    color: white;
-}
-
-tr.reprovado {
-    background-color: #e74c3c;
-    color: white;
+    font-weight: bold;
 }
 
 .busca{

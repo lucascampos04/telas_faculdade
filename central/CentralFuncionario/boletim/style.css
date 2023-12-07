@@ -106,14 +106,24 @@ h1{
     cursor: pointer;
 }
 
-tr.aprovado {
-    background-color: #2ecc71;
-    color: white;
+table{
+    border: 1px solid black;
+    width: 90vw;
+    height: 20vw;
+    position: relative;
+    top: 10px;
 }
 
-tr.reprovado {
-    background-color: #e74c3c;
+th, td {
+    border: none;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #3a86ff;
     color: white;
+    font-weight: bold;
 }
 
 .search{
