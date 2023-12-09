@@ -24,7 +24,7 @@
     <span class="bolCrono">    
         <p style="font-size: 14px; position: relative; right: 20vh;">CASO NÃO ENCONTRE O ALUNO DESEJADO <br> FAÇA A BUSCA PELO RA DO MESMO</p>
         <div class="btns">
-            <button class="add" id="add">GERENCIAR NOTAS</button>
+            <button class="add" id="add">GERENCIAR NOTA</button>
         </div>
     </span>
 
@@ -57,9 +57,9 @@
                 <option value="">3º B</option>
             </select>
     
-            <label for="" style="position: relative; left: 4vh; bottom: 5vh; font-size: 20px; font-weight: 900;">Selecione um Aluno</label>
-            <select name="ALUNO" id="student" style="position: relative; left: -20vh;">
-                <option value="" disabled selected>Selecione um aluno(a)</option>
+            <label for="" style="position: relative; left: 4vh; bottom: 5vh; font-size: 20px; font-weight: 900;">Aluno</label>
+            <select name="ALUNO" id="student" style="position: relative; left: -5vh;">
+                <option value="" disabled selected>Selecione o Aluno(a)</option>
                 <option value="1">Lucas Oliveira Campos </option>
                 <option value="2">Ana Silva Souza</option>
                 <option value="3">Pedro Santos Lima</option>
@@ -92,7 +92,7 @@
                 <option value="30">Daniel Oliveira Rocha</option>
             </select>
     
-            <label for="" style="position: relative; left: -17vh; bottom: 5vh; font-size: 20px; font-weight: 900;">Bimestre</label>
+            <label for="" style="position: relative; left: -1vh; bottom: 5vh; font-size: 20px; font-weight: 900;">Bimestre</label>
             <select name="BIMESTRE" id="bimestre" title="BIMESTRE" style="width: 300px; position: relative; left: 129vh; bottom: 5.4vh;">
                 <option value="" disabled selected>1° BIMESTRE</option>
                 <option value="1">1° BIMESTRE</option>
@@ -167,6 +167,15 @@
                 <td id="Quimica_situacao">APROVADO</td>
             </tr>
             <tr class="aprovado">
+                <td id="Quimica">História</td>
+                <td id="Quimica_1">7.5</td>
+                <td id="Quimica_2">7</td>
+                <td id="Quimica_media">7.25</td>
+                <td id="Quimica_faltas">10</td>
+                <td id="Quimica_limite">20</td>
+                <td id="Quimica_situacao">APROVADO</td>
+            </tr>
+            <tr class="aprovado">
                 <td id="Redacao">Redação</td>
                 <td id="Redacao_1">7.5</td>
                 <td id="Redacao_2">7</td>
@@ -174,7 +183,7 @@
                 <td id="Redacao_faltas">10</td>
                 <td id="Redacao_limite">20</td>
                 <td id="Redacao_situacao">APROVADO</td>
-            </tr> <a href=></a>
+            </tr> 
         </table>
     </div>
     <script src="./index.js"></script>
